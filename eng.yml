@@ -1,0 +1,4639 @@
+recognize:
+  policy:
+    - srcCode: ja-JP
+      engine: microsoft
+    - srcCode: en-US
+      engine: microsoft
+    - srcCode: zh-CN
+      engine: iflytek
+    - srcCode: ur-PK
+      engine: google
+    - srcCode: ur-IN
+      engine: google
+  engine:
+    - name: iflytek
+      enable: true
+      appId: ad7d7821
+      secret: 77674d3b81c237062b1dd2497b7d9010
+      order: 3
+      engineList:
+        - code: zh-CN
+          value: zh_cn
+        - code: zh-HK
+          value: zh_cn
+        - code: en-US
+          value: en_us
+        - code: ja-JP
+          value: ja_jp
+        - code: ko-KR
+          value: ko_kr
+        - code: es-ES
+          value: es_es
+        - code: ru-RU
+          value: ru-ru
+        - code: fr-FR
+          value: fr-FR
+    - name: google
+      enable: true
+      order: 2
+      engineList:
+        - desc: 南非荷兰语（南非）
+          code: af-ZA
+          value: af-ZA
+        - desc: 阿尔巴尼亚语（阿尔巴尼亚）
+          code: sq-AL
+          value: sq-AL
+        - desc: 阿姆哈拉语（埃塞俄比亚）
+          code: am-ET
+          value: am-ET
+        - desc: 阿拉伯语（阿尔及利亚）
+          code: ar-DZ
+          value: ar-DZ
+        - desc: 阿拉伯语（巴林）
+          code: ar-BH
+          value: ar-BH
+        - desc: 阿拉伯语（埃及）
+          code: ar-EG
+          value: ar-EG
+        - desc: 阿拉伯语（伊拉克）
+          code: ar-IQ
+          value: ar-IQ
+        - desc: 阿拉伯语（以色列）
+          code: ar-IL
+          value: ar-IL
+        - desc: 阿拉伯语（约旦）
+          code: ar-JO
+          value: ar-JO
+        - desc: 阿拉伯语（科威特）
+          code: ar-KW
+          value: ar-KW
+        - desc: 阿拉伯语（黎巴嫩）
+          code: ar-LB
+          value: ar-LB
+        - desc: 阿拉伯语（毛里塔尼亚）
+          code: ar-MR
+          value: ar-MR
+        - desc: 阿拉伯语（摩洛哥）
+          code: ar-MA
+          value: ar-MA
+        - desc: 阿拉伯语（阿曼）
+          code: ar-OM
+          value: ar-OM
+        - desc: 阿拉伯语（卡塔尔）
+          code: ar-QA
+          value: ar-QA
+        - desc: 阿拉伯语（沙特阿拉伯）
+          code: ar-SA
+          value: ar-SA
+        - desc: 阿拉伯语（巴勒斯坦国）
+          code: ar-PS
+          value: ar-PS
+        - desc: 阿拉伯语（突尼斯）
+          code: ar-TN
+          value: ar-TN
+        - desc: 阿拉伯语（阿拉伯联合酋长国）
+          code: ar-AE
+          value: ar-AE
+        - desc: 阿拉伯语（也门）
+          code: ar-YE
+          value: ar-YE
+        - desc: 亚美尼亚语（亚美尼亚）
+          code: hy-AM
+          value: hy-AM
+        - desc: 阿塞拜疆语（阿塞拜疆）
+          code: az-AZ
+          value: az-AZ
+        - desc: 巴斯克语（西班牙）
+          code: eu-ES
+          value: eu-ES
+        - desc: 孟加拉语（孟加拉）
+          code: bn-BD
+          value: bn-BD
+        - desc: 孟加拉语（印度）
+          code: bn-IN
+          value: bn-IN
+        - desc: 波斯尼亚语（波斯尼亚和黑塞哥维那）
+          code: bs-BA
+          value: bs-BA
+        - desc: 保加利亚语（保加利亚）
+          code: bg-BG
+          value: bg-BG
+        - desc: 缅甸语（缅甸）
+          code: my-MM
+          value: my-MM
+        - desc: 加泰罗尼亚语（西班牙）
+          code: ca-ES
+          value: ca-ES
+        - desc: 中文粤语（香港繁体）
+          code: zh-HK
+          value: yue-Hant-HK
+        - desc: 中文普通话（中国简体）
+          code: zh-CN
+          value: cmn-Hans-CN
+        - desc: 中文普通话（台湾繁体）
+          code: zh-TW
+          value: cmn-Hant-TW
+        - desc: 克罗地亚语（克罗地亚）
+          code: hr-HR
+          value: hr-HR
+        - desc: 捷克语（捷克共和国）
+          code: cs-CZ
+          value: cs-CZ
+        - desc: 丹麦语（丹麦）
+          code: da-DK
+          value: da-DK
+        - desc: 荷兰语（比利时）
+          code: nl-BE
+          value: nl-BE
+        - desc: 荷兰语（荷兰）
+          code: nl-NL
+          value: nl-NL
+        - desc: 英语（澳大利亚）
+          code: en-AU
+          value: en-AU
+        - desc: 英语（加拿大）
+          code: en-CA
+          value: en-CA
+        - desc: 英语（加纳）
+          code: en-GH
+          value: en-GH
+        - desc: 英语（香港）
+          code: en-HK
+          value: en-HK
+        - desc: 英语（印度）
+          code: en-IN
+          value: en-IN
+        - desc: 英语（爱尔兰）
+          code: en-IE
+          value: en-IE
+        - desc: 英语（肯尼亚）
+          code: en-KE
+          value: en-KE
+        - desc: 英语（新西兰）
+          code: en-NZ
+          value: en-NZ
+        - desc: 英语（尼日利亚）
+          code: en-NG
+          value: en-NG
+        - desc: 英语（巴基斯坦）
+          code: en-PK
+          value: en-PK
+        - desc: 英语（菲律宾）
+          code: en-PH
+          value: en-PH
+        - desc: 英语（新加坡）
+          code: en-SG
+          value: en-SG
+        - desc: 英语（南非）
+          code: en-ZA
+          value: en-ZA
+        - desc: 英语（坦桑尼亚）
+          code: en-TZ
+          value: en-TZ
+        - desc: 英语（英国）
+          code: en-GB
+          value: en-GB
+        - desc: 英语（美国）
+          code: en-US
+          value: en-US
+        - desc: 爱沙尼亚语（爱沙尼亚）
+          code: et-EE
+          value: et-EE
+        - desc: 菲律宾语（菲律宾）
+          code: fil-PH
+          value: fil-PH
+        - desc: 芬兰语（芬兰）
+          code: fi-FI
+          value: fi-FI
+        - desc: 法语（比利时）
+          code: fr-BE
+          value: fr-BE
+        - desc: 法语（加拿大）
+          code: fr-CA
+          value: fr-CA
+        - desc: 法语（法国）
+          code: fr-FR
+          value: fr-FR
+        - desc: 法语（瑞士）
+          code: fr-CH
+          value: fr-CH
+        - desc: 加利西亚语（西班牙）
+          code: gl-ES
+          value: gl-ES
+        - desc: 格鲁吉亚语（格鲁吉亚）
+          code: ka-GE
+          value: ka-GE
+        - desc: 德语（奥地利）
+          code: de-AT
+          value: de-AT
+        - desc: 德语（瑞士）
+          code: de-CH
+          value: de-CH
+        - desc: 德语（德国）
+          code: de-DE
+          value: de-DE
+        - desc: 希腊语（希腊）
+          code: el-GR
+          value: el-GR
+        - desc: 古吉拉特语（印度）
+          code: gu-IN
+          value: gu-IN
+        - desc: 希伯来语（以色列）
+          code: he-IL
+          value: iw-IL
+        - desc: 印地语（印度）
+          code: hi-IN
+          value: hi-IN
+        - desc: 匈牙利语（匈牙利）
+          code: hu-HU
+          value: hu-HU
+        - desc: 冰岛语（冰岛）
+          code: is-IS
+          value: is-IS
+        - desc: 印度尼西亚语（印度尼西亚）
+          code: id-ID
+          value: id-ID
+        - desc: 意大利语（意大利）
+          code: it-IT
+          value: it-IT
+        - desc: 意大利语（瑞士）
+          code: it-CH
+          value: it-CH
+        - desc: 日语（日本）
+          code: ja-JP
+          value: ja-JP
+        - desc: 爪哇语（印度尼西亚）
+          code: jv-ID
+          value: jv-ID
+        - desc: 卡纳达语（印度）
+          code: kn-IN
+          value: kn-IN
+        - desc: 哈萨克语（哈萨克斯坦）
+          code: kk-KZ
+          value: kk-KZ
+        - desc: 高棉语（柬埔寨）
+          code: km-KH
+          value: km-KH
+        - desc: 韩语（韩国）
+          code: ko-KR
+          value: ko-KR
+        - desc: 老挝语（老挝）
+          code: lo-LA
+          value: lo-LA
+        - desc: 拉脱维亚语（拉脱维亚）
+          code: lv-LV
+          value: lv-LV
+        - desc: 立陶宛语（立陶宛）
+          code: lt-LT
+          value: lt-LT
+        - desc: 马其顿语（北马其顿）
+          code: mk-MK
+          value: mk-MK
+        - desc: 马来语（马来西亚）
+          code: ms-MY
+          value: ms-MY
+        - desc: 马拉雅拉姆语（印度）
+          code: ml-IN
+          value: ml-IN
+        - desc: 蒙古语（蒙古）
+          code: mn-MN
+          value: mn-MN
+        - desc: 尼泊尔语（尼泊尔）
+          code: ne-NP
+          value: ne-NP
+        - desc: 博克马尔挪威语（挪威）
+          code: no-NO
+          value: no-NO
+        - desc: 波斯语（伊朗）
+          code: fa-IR
+          value: fa-IR
+        - desc: 波兰语（波兰）
+          code: pl-PL
+          value: pl-PL
+        - desc: 葡萄牙语（巴西）
+          code: pt-BR
+          value: pt-BR
+        - desc: 葡萄牙语（葡萄牙）
+          code: pt-PT
+          value: pt-PT
+        - desc: 旁遮普语（果鲁穆奇语，印度）
+          code: pa-Guru-IN
+          value: pa-Guru-IN
+        - desc: 罗马尼亚语（罗马尼亚）
+          code: ro-RO
+          value: ro-RO
+        - desc: 俄语（俄罗斯）
+          code: ru-RU
+          value: ru-RU
+        - desc: 卢旺达语（卢旺达）
+          code: rw-RW
+          value: rw-RW
+        - desc: 塞尔维亚语（塞尔维亚）
+          code: sr-RS
+          value: sr-RS
+        - desc: 僧伽罗语（斯里兰卡）
+          code: si-LK
+          value: si-LK
+        - desc: 斯洛伐克语（斯洛伐克）
+          code: sk-SK
+          value: sk-SK
+        - desc: 斯洛文尼亚语（斯洛文尼亚）
+          code: sl-SI
+          value: sl-SI
+        - desc: 斯瓦蒂语（南非）
+          code: ss-latn-za
+          value: ss-latn-za
+        - desc: 南索托语（南非）
+          code: st-ZA
+          value: st-ZA
+        - desc: 西班牙语（阿根廷）
+          code: es-AR
+          value: es-AR
+        - desc: 西班牙语（玻利维亚）
+          code: es-BO
+          value: es-BO
+        - desc: 西班牙语（智利）
+          code: es-CL
+          value: es-CL
+        - desc: 西班牙语（哥伦比亚）
+          code: es-CO
+          value: es-CO
+        - desc: 西班牙语（哥斯达黎加）
+          code: es-CR
+          value: es-CR
+        - desc: 西班牙语（多米尼加共和国）
+          code: es-DO
+          value: es-DO
+        - desc: 西班牙语（厄瓜多尔）
+          code: es-EC
+          value: es-EC
+        - desc: 西班牙语（萨尔瓦多）
+          code: es-SV
+          value: es-SV
+        - desc: 西班牙语（危地马拉）
+          code: es-GT
+          value: es-GT
+        - desc: 西班牙语（洪都拉斯）
+          code: es-HN
+          value: es-HN
+        - desc: 西班牙语（墨西哥）
+          code: es-MX
+          value: es-MX
+        - desc: 西班牙语（尼加拉瓜）
+          code: es-NI
+          value: es-NI
+        - desc: 西班牙语（巴拿马）
+          code: es-PA
+          value: es-PA
+        - desc: 西班牙语（秘鲁）
+          code: es-PE
+          value: es-PE
+        - desc: 西班牙语（波多黎各）
+          code: es-PR
+          value: es-PR
+        - desc: 西班牙语（西班牙）
+          code: es-ES
+          value: es-ES
+        - desc: 西班牙语（美国）
+          code: es-US
+          value: es-US
+        - desc: 西班牙语（乌拉圭）
+          code: es-UY
+          value: es-UY
+        - desc: 西班牙语（委内瑞拉）
+          code: es-VE
+          value: es-VE
+        - desc: 巽他语（印度尼西亚）
+          code: su-ID
+          value: su-ID
+        - desc: 斯瓦希里语（肯尼亚）
+          code: sw-KE
+          value: sw-KE
+        - desc: 斯瓦希里语（坦桑尼亚）
+          code: sw-TZ
+          value: sw-TZ
+        - desc: 瑞典语（瑞典）
+          code: sv-SE
+          value: sv-SE
+        - desc: 泰米尔语（印度）
+          code: ta-IN
+          value: ta-IN
+        - desc: 泰米尔语（马来西亚）
+          code: ta-MY
+          value: ta-MY
+        - desc: 泰米尔语（新加坡）
+          code: ta-SG
+          value: ta-SG
+        - desc: 泰米尔语（斯里兰卡）
+          code: ta-LK
+          value: ta-LK
+        - desc: 泰卢固语（印度）
+          code: te-IN
+          value: te-IN
+        - desc: 泰语（泰国）
+          code: th-TH
+          value: th-TH
+        - desc: 茨瓦纳语（南非）
+          code: tn-latn-za
+          value: tn-latn-za
+        - desc: 土耳其语（土耳其）
+          code: tr-TR
+          value: tr-TR
+        - desc: 聪加语（南非）
+          code: ts-ZA
+          value: ts-ZA
+        - desc: 乌克兰语（乌克兰）
+          code: uk-UA
+          value: uk-UA
+        - desc: 乌尔都语（印度）
+          code: ur-IN
+          value: ur-IN
+        - desc: 乌尔都语（巴基斯坦）
+          code: ur-PK
+          value: ur-PK
+        - desc: 乌兹别克语（乌兹别克斯坦）
+          code: uz-UZ
+          value: uz-UZ
+        - desc: 文达语（南非）
+          code: ve-ZA
+          value: ve-ZA
+        - desc: 越南语（越南）
+          code: vi-VN
+          value: vi-VN
+        - desc: 索萨语（南非）
+          code: xh-ZA
+          value: xh-ZA
+    - name: microsoft
+      order: 1
+      enable: true
+      key: 订阅值
+      region: 区域
+      engineList:
+        - code: hi-IN
+          value: hi-IN
+          descEn: Hindi (India)
+          desc: 印地语(印度)
+        - code: it-IT
+          value: it-IT
+          descEn: Italian (Italy)
+          desc: 意大利语(意大利)
+        - code: da-DK
+          value: da-DK
+          descEn: Danish (Denmark)
+          desc: 丹麦语(丹麦)
+        - code: ja-JP
+          value: ja-JP
+          descEn: Japanese (Japan)
+          desc: 日语(日本)
+        - code: en-AU
+          value: en-AU
+          descEn: English (Australia)
+          desc: 英语(澳大利亚)
+        - code: nb-NO
+          value: nb-NO
+          descEn: Norwegian (Bokm?l) (Norway)
+          desc: 书面挪威语(挪威)
+        - code: en-CA
+          value: en-CA
+          descEn: English (Canada)
+          desc: 英语(加拿大)
+        - code: en-IN
+          value: en-IN
+          descEn: English (India)
+          desc: 英语(印度)
+        - code: en-NZ
+          value: en-NZ
+          descEn: English (New Zealand)
+          desc: 英语(新西兰)
+        - code: es-ES
+          value: es-ES
+          descEn: Spanish (Spain)
+          desc: 西班牙语(西班牙)
+        - code: sv-SE
+          value: sv-SE
+          descEn: Swedish (Sweden)
+          desc: 瑞典语(瑞典)
+        - code: es-MX
+          value: es-MX
+          descEn: Spanish (Mexico)
+          desc: 西班牙语(墨西哥)
+        - code: zh-CN
+          value: zh-CN
+          descEn: 'Chinese (Mandarin, simplified)'
+          desc: 中文(普通话，简体)
+        - code: fr-CA
+          value: fr-CA
+          descEn: French (Canada)
+          desc: 法语(加拿大)
+        - code: fr-FR
+          value: fr-FR
+          descEn: French (France)
+          desc: 法语(法国)
+        - desc: English (United States)
+          code: en-US
+          value: en-US
+          descEn: English (United States)
+        - desc: English (Great Britain)
+          code: en-GB
+          value: en-GB
+          descEn: English (United Kingdom)
+        - desc: Deutsch (Deutschland)
+          code: de-DE
+          value: de-DE
+          descEn: German (Germany)
+        - desc: Espa?ol (Colombia)
+          code: es-CO
+          value: es-CO
+          descEn: Spanish (Colombia)
+        - desc: ??? (????)
+          code: ko-KR
+          value: ko-KR
+          descEn: Korean (South Korea)
+        - desc: Nederlands (Nederland)
+          code: nl-NL
+          value: nl-NL
+          descEn: Dutch (Netherlands)
+        - desc: Português (Portugal)
+          code: pt-PT
+          value: pt-PT
+          descEn: Portuguese (Portugal)
+        - desc: Русский (Россия)
+          code: ru-RU
+          value: ru-RU
+          descEn: Russian (Russia)
+        - desc: ??? (?????????)
+          code: th-TH
+          value: th-TH
+          descEn: Thai (Thailand)
+        - desc: Türk?e (Türkiye)
+          code: tr-TR
+          value: tr-TR
+          descEn: Turkish (Turkey)
+        - desc: 國語 (台灣)
+          code: zh-TW
+          value: zh-TW
+          descEn: 'Chinese, Mandarin (Traditional, Taiwan)'
+        - desc: 中文 (香港)
+          code: zh-HK
+          value: zh-HK
+          descEn: 'Chinese, Mandarin (Traditional, Taiwan)'
+        - desc: Afrikaans (Suid-Afrika)
+          code: af-ZA
+          value: af-ZA
+          descEn: Afrikaans (South Africa)
+        - desc: ???? (?????)
+          code: am-ET
+          value: am-ET
+          descEn: Amharic (Ethiopia)
+        - desc: ??? (????????)
+          code: hy-AM
+          value: hy-AM
+          descEn: Armenian (Armenia)
+        - desc: Az?rbaycan (Az?rbaycan)
+          code: az-AZ
+          value: az-AZ
+          descEn: Azerbaijani (Azerbaijan)
+        - desc: Bahasa Indonesia (Indonesia)
+          code: id-ID
+          value: id-ID
+          descEn: Indonesian (Indonesia)
+        - desc: Bahasa Melayu (Malaysia)
+          code: ms-MY
+          value: ms-MY
+          descEn: Malay (Malaysia)
+        - desc: ????? (????????)
+          code: bn-BD
+          value: bn-BD
+          descEn: Bengali (Bangladesh)
+        - desc: ????? (????)
+          code: bn-IN
+          value: bn-IN
+          descEn: Bengali (India)
+        - desc: Català (Espanya)
+          code: ca-ES
+          value: ca-ES
+          descEn: Catalan (Spain)
+        - desc: ?e?tina (?eská republika)
+          code: cs-CZ
+          value: cs-CZ
+          descEn: Czech (Czech Republic)
+        - desc: English (Ghana)
+          code: en-GH
+          value: en-GH
+          descEn: English (Ghana)
+        - desc: English (Ireland)
+          code: en-IE
+          value: en-IE
+          descEn: English (Ireland)
+        - desc: English (Kenya)
+          code: en-KE
+          value: en-KE
+          descEn: English (Kenya)
+        - desc: English (Nigeria)
+          code: en-NG
+          value: en-NG
+          descEn: English (Nigeria)
+        - desc: English (Philippines)
+          code: en-PH
+          value: en-PH
+          descEn: English (Philippines)
+        - desc: English (Singapore)
+          code: en-SG
+          value: en-SG
+          descEn: English (Singapore)
+        - desc: English (South Africa)
+          code: en-ZA
+          value: en-ZA
+          descEn: English (South Africa)
+        - desc: English (Tanzania)
+          code: en-TZ
+          value: en-TZ
+          descEn: English (Tanzania)
+        - desc: Espa?ol (Argentina)
+          code: es-AR
+          value: es-AR
+          descEn: Spanish (Argentina)
+        - desc: Espa?ol (Bolivia)
+          code: es-BO
+          value: es-BO
+          descEn: Spanish (Bolivia)
+        - desc: Espa?ol (Chile)
+          code: es-CL
+          value: es-CL
+          descEn: Spanish (Chile)
+        - desc: Espa?ol (Costa Rica)
+          code: es-CR
+          value: es-CR
+          descEn: Spanish (Costa Rica)
+        - desc: Espa?ol (Ecuador)
+          code: es-EC
+          value: es-EC
+          descEn: Spanish (Ecuador)
+        - desc: Espa?ol (El Salvador)
+          code: es-SV
+          value: es-SV
+          descEn: Spanish (El Salvador)
+        - desc: Espa?ol (Estados Unidos)
+          code: es-US
+          value: es-US
+          descEn: Spanish (United States)
+        - desc: Espa?ol (Guatemala)
+          code: es-GT
+          value: es-GT
+          descEn: Spanish (Guatemala)
+        - desc: Espa?ol (Honduras)
+          code: es-HN
+          value: es-HN
+          descEn: Spanish (Honduras)
+        - desc: Espa?ol (Nicaragua)
+          code: es-NI
+          value: es-NI
+          descEn: Spanish (Nicaragua)
+        - desc: Espa?ol (Panamá)
+          code: es-PA
+          value: es-PA
+          descEn: Spanish (Panama)
+        - desc: Espa?ol (Paraguay)
+          code: es-PY
+          value: es-PY
+          descEn: Spanish (Paraguay)
+        - desc: Espa?ol (Perú)
+          code: es-PE
+          value: es-PE
+          descEn: Spanish (Peru)
+        - desc: Espa?ol (Puerto Rico)
+          code: es-PR
+          value: es-PR
+          descEn: Spanish (Puerto Rico)
+        - desc: Espa?ol (República Dominicana)
+          code: es-DO
+          value: es-DO
+          descEn: Spanish (Dominican Republic)
+        - desc: Espa?ol (Uruguay)
+          code: es-UY
+          value: es-UY
+          descEn: Spanish (Uruguay)
+        - desc: Espa?ol (Venezuela)
+          code: es-VE
+          value: es-VE
+          descEn: Spanish (Venezuela)
+        - desc: Euskara (Espainia)
+          code: eu-ES
+          value: eu-ES
+          descEn: Basque (Spain)
+        - desc: Filipino (Pilipinas)
+          code: fil-PH
+          value: fil-PH
+          descEn: Filipino (Philippines)
+        - desc: Galego (Espa?a)
+          code: gl-ES
+          value: gl-ES
+          descEn: Galician (Spain)
+        - desc: ??????? (??????????)
+          code: ka-GE
+          value: ka-GE
+          descEn: Georgian (Georgia)
+        - desc: ??????? (????)
+          code: gu-IN
+          value: gu-IN
+          descEn: Gujarati (India)
+        - desc: Hrvatski (Hrvatska)
+          code: hr-HR
+          value: hr-HR
+          descEn: Croatian (Croatia)
+        - desc: IsiZulu (Ningizimu Afrika)
+          code: zu-ZA
+          value: zu-ZA
+          descEn: Zulu (South Africa)
+        - desc: ?slenska (?sland)
+          code: is-IS
+          value: is-IS
+          descEn: Icelandic (Iceland)
+        - desc: Jawa (Indonesia)
+          code: jv-ID
+          value: jv-ID
+          descEn: Javanese (Indonesia)
+        - desc: ????? (????)
+          code: kn-IN
+          value: kn-IN
+          descEn: Kannada (India)
+        - desc: ????????? (???????)
+          code: km-KH
+          value: km-KH
+          descEn: Khmer (Cambodia)
+        - desc: ??? (???)
+          code: lo-LA
+          value: lo-LA
+          descEn: Lao (Laos)
+        - desc: Latvie?u (latvie?u)
+          code: lv-LV
+          value: lv-LV
+          descEn: Latvian (Latvia)
+        - desc: Lietuvi? (Lietuva)
+          code: lt-LT
+          value: lt-LT
+          descEn: Lithuanian (Lithuania)
+        - desc: Magyar (Magyarország)
+          code: hu-HU
+          value: hu-HU
+          descEn: Hungarian (Hungary)
+        - desc: ?????? (??????)
+          code: ml-IN
+          value: ml-IN
+          descEn: Malayalam (India)
+        - desc: ????? (????)
+          code: mr-IN
+          value: mr-IN
+          descEn: Marathi (India)
+        - desc: ?????? (?????)
+          code: ne-NP
+          value: ne-NP
+          descEn: Nepali (Nepal)
+        - desc: Polski (Polska)
+          code: pl-PL
+          value: pl-PL
+          descEn: Polish (Poland)
+        - desc: Português (Brasil)
+          code: pt-BR
+          value: pt-BR
+          descEn: Portuguese (Brazil)
+        - desc: Rom?n? (Rom?nia)
+          code: ro-RO
+          value: ro-RO
+          descEn: Romanian (Romania)
+        - desc: ????? (???? ?????)
+          code: si-LK
+          value: si-LK
+          descEn: Sinhala (Sri Lanka)
+        - desc: Sloven?ina (Slovensko)
+          code: sk-SK
+          value: sk-SK
+          descEn: Slovak (Slovakia)
+        - desc: Sloven??ina (Slovenija)
+          code: sl-SI
+          value: sl-SI
+          descEn: Slovenian (Slovenia)
+        - desc: Urang (Indonesia)
+          code: su-ID
+          value: su-ID
+          descEn: Sundanese (Indonesia)
+        - desc: Swahili (Tanzania)
+          code: sw-TZ
+          value: sw-TZ
+          descEn: Swahili (Tanzania)
+        - desc: Swahili (Kenya)
+          code: sw-KE
+          value: sw-KE
+          descEn: Swahili (Kenya)
+        - desc: Suomi (Suomi)
+          code: fi-FI
+          value: fi-FI
+          descEn: Finnish (Finland)
+        - desc: ????? (???????)
+          code: ta-IN
+          value: ta-IN
+          descEn: Tamil (India)
+        - desc: ?????? (????????)
+          code: te-IN
+          value: te-IN
+          descEn: Telugu (India)
+        - desc: Ti?ng Vi?t (Vi?t Nam)
+          code: vi-VN
+          value: vi-VN
+          descEn: Vietnamese (Vietnam)
+        - desc: Ελληνικ? (Ελλ?δα)
+          code: el-GR
+          value: el-GR
+          descEn: Greek (Greece)
+        - desc: Български (България)
+          code: bg-BG
+          value: bg-BG
+          descEn: Bulgarian (Bulgaria)
+        - desc: Српски (Срби?а)
+          code: sr-RS
+          value: sr-RS
+          descEn: Serbian (Serbia)
+        - desc: Укра?нська (Укра?на)
+          code: uk-UA
+          value: uk-UA
+          descEn: Ukrainian (Ukraine)
+        - desc: ????? (?????)
+          code: he-IL
+          value: he-IL
+          descEn: Hebrew (Israel)
+        - desc: ??????? (???????)
+          code: ar-IL
+          value: ar-IL
+          descEn: Arabic (Israel)
+        - desc: ??????? (??????)
+          code: ar-JO
+          value: ar-JO
+          descEn: Arabic (Jordan)
+        - desc: ??????? (????????)
+          code: ar-AE
+          value: ar-AE
+          descEn: Arabic (United Arab Emirates)
+        - desc: ??????? (???????)
+          code: ar-BH
+          value: ar-BH
+          descEn: Arabic (Bahrain)
+        - desc: ??????? (???????)
+          code: ar-DZ
+          value: ar-DZ
+          descEn: Arabic (Algeria)
+        - desc: ??????? (????????)
+          code: ar-SA
+          value: ar-SA
+          descEn: Arabic (Saudi Arabia)
+        - desc: ??????? (??????)
+          code: ar-IQ
+          value: ar-IQ
+          descEn: Arabic (Iraq)
+        - desc: ??????? (??????)
+          code: ar-KW
+          value: ar-KW
+          descEn: Arabic (Kuwait)
+        - desc: ??????? (??????)
+          code: ar-MA
+          value: ar-MA
+          descEn: Arabic (Morocco)
+        - desc: ??????? (????)
+          code: ar-TN
+          value: ar-TN
+          descEn: Arabic (Tunisia)
+        - desc: ??????? (?????)
+          code: ar-OM
+          value: ar-OM
+          descEn: Arabic (Oman)
+        - desc: ??????? (??????)
+          code: ar-PS
+          value: ar-PS
+          descEn: Arabic (State of Palestine)
+        - desc: ??????? (???)
+          code: ar-QA
+          value: ar-QA
+          descEn: Arabic (Qatar)
+        - desc: ??????? (?????)
+          code: ar-LB
+          value: ar-LB
+          descEn: Arabic (Lebanon)
+        - desc: ??????? (???)
+          code: ar-EG
+          value: ar-EG
+          descEn: Arabic (Egypt)
+        - desc: ????? (?????)
+          code: fa-IR
+          value: fa-IR
+          descEn: Persian (Iran)
+speechTranslation:
+  policy:
+    - srcCode: en-US
+      dstCode: zh-CN
+      engine: custom
+      projects:
+        - lt_win
+        - lt_mac
+  engine:
+    - name: microsoft
+      enable: true
+      key: 订阅值
+      region: 区域
+      order: 1
+      engineList:
+        - code: my-MM
+          value: my-MM
+          descEn: Myanmar (Myanmar)
+          desc: 缅甸语(缅甸)
+        - code: hi-IN
+          value: hi-IN
+          descEn: Hindi (India)
+          desc: 印地语(印度)
+        - code: it-IT
+          value: it-IT
+          descEn: Italian (Italy)
+          desc: 意大利语(意大利)
+        - code: da-DK
+          value: da-DK
+          descEn: Danish (Denmark)
+          desc: 丹麦语(丹麦)
+        - code: ja-JP
+          value: ja-JP
+          descEn: Japanese (Japan)
+          desc: 日语(日本)
+        - code: en-AU
+          value: en-AU
+          descEn: English (Australia)
+          desc: 英语(澳大利亚)
+        - code: nb-NO
+          value: nb-NO
+          descEn: Norwegian (Bokm?l) (Norway)
+          desc: 书面挪威语(挪威)
+        - code: en-CA
+          value: en-CA
+          descEn: English (Canada)
+          desc: 英语(加拿大)
+        - code: en-IN
+          value: en-IN
+          descEn: English (India)
+          desc: 英语(印度)
+        - code: en-NZ
+          value: en-NZ
+          descEn: English (New Zealand)
+          desc: 英语(新西兰)
+        - code: es-ES
+          value: es-ES
+          descEn: Spanish (Spain)
+          desc: 西班牙语(西班牙)
+        - code: sv-SE
+          value: sv-SE
+          descEn: Swedish (Sweden)
+          desc: 瑞典语(瑞典)
+        - code: es-MX
+          value: es-MX
+          descEn: Spanish (Mexico)
+          desc: 西班牙语(墨西哥)
+        - code: zh-CN
+          value: zh-CN
+          descEn: 'Chinese (Mandarin, simplified)'
+          desc: 中文(普通话，简体)
+        - code: zh-HK
+          value: zh-HK
+          descEn: Chinese
+          desc: 中文(粤语)
+        - code: fr-CA
+          value: fr-CA
+          descEn: French (Canada)
+          desc: 法语(加拿大)
+        - code: fr-FR
+          value: fr-FR
+          descEn: French (France)
+          desc: 法语(法国)
+        - desc: English (United States)
+          code: en-US
+          value: en-US
+          descEn: English (United States)
+        - desc: English (Great Britain)
+          code: en-GB
+          value: en-GB
+          descEn: English (United Kingdom)
+        - desc: Deutsch (Deutschland)
+          code: de-DE
+          value: de-DE
+          descEn: German (Germany)
+        - desc: Espa?ol (Colombia)
+          code: es-CO
+          value: es-CO
+          descEn: Spanish (Colombia)
+        - desc: ??? (????)
+          code: ko-KR
+          value: ko-KR
+          descEn: Korean (South Korea)
+        - desc: Nederlands (Nederland)
+          code: nl-NL
+          value: nl-NL
+          descEn: Dutch (Netherlands)
+        - desc: Português (Portugal)
+          code: pt-PT
+          value: pt-PT
+          descEn: Portuguese (Portugal)
+        - desc: Русский (Россия)
+          code: ru-RU
+          value: ru-RU
+          descEn: Russian (Russia)
+        - desc: ??? (?????????)
+          code: th-TH
+          value: th-TH
+          descEn: Thai (Thailand)
+        - desc: Türk?e (Türkiye)
+          code: tr-TR
+          value: tr-TR
+          descEn: Turkish (Turkey)
+        - desc: 國語 (台灣)
+          code: zh-TW
+          value: zh-TW
+          descEn: 'Chinese, Mandarin (Traditional, Taiwan)'
+        - desc: Afrikaans (Suid-Afrika)
+          code: af-ZA
+          value: af-ZA
+          descEn: Afrikaans (South Africa)
+        - desc: ???? (?????)
+          code: am-ET
+          value: am-ET
+          descEn: Amharic (Ethiopia)
+        - desc: ??? (????????)
+          code: hy-AM
+          value: hy-AM
+          descEn: Armenian (Armenia)
+        - desc: Az?rbaycan (Az?rbaycan)
+          code: az-AZ
+          value: az-AZ
+          descEn: Azerbaijani (Azerbaijan)
+        - desc: Bahasa Indonesia (Indonesia)
+          code: id-ID
+          value: id-ID
+          descEn: Indonesian (Indonesia)
+        - desc: Bahasa Melayu (Malaysia)
+          code: ms-MY
+          value: ms-MY
+          descEn: Malay (Malaysia)
+        - desc: ????? (????????)
+          code: bn-BD
+          value: bn-BD
+          descEn: Bengali (Bangladesh)
+        - desc: ????? (????)
+          code: bn-IN
+          value: bn-IN
+          descEn: Bengali (India)
+        - desc: Català (Espanya)
+          code: ca-ES
+          value: ca-ES
+          descEn: Catalan (Spain)
+        - desc: ?e?tina (?eská republika)
+          code: cs-CZ
+          value: cs-CZ
+          descEn: Czech (Czech Republic)
+        - desc: English (Ghana)
+          code: en-GH
+          value: en-GH
+          descEn: English (Ghana)
+        - desc: English (Ireland)
+          code: en-IE
+          value: en-IE
+          descEn: English (Ireland)
+        - desc: English (Kenya)
+          code: en-KE
+          value: en-KE
+          descEn: English (Kenya)
+        - desc: English (Nigeria)
+          code: en-NG
+          value: en-NG
+          descEn: English (Nigeria)
+        - desc: English (Philippines)
+          code: en-PH
+          value: en-PH
+          descEn: English (Philippines)
+        - desc: English (Singapore)
+          code: en-SG
+          value: en-SG
+          descEn: English (Singapore)
+        - desc: English (South Africa)
+          code: en-ZA
+          value: en-ZA
+          descEn: English (South Africa)
+        - desc: English (Tanzania)
+          code: en-TZ
+          value: en-TZ
+          descEn: English (Tanzania)
+        - desc: Espa?ol (Argentina)
+          code: es-AR
+          value: es-AR
+          descEn: Spanish (Argentina)
+        - desc: Espa?ol (Bolivia)
+          code: es-BO
+          value: es-BO
+          descEn: Spanish (Bolivia)
+        - desc: Espa?ol (Chile)
+          code: es-CL
+          value: es-CL
+          descEn: Spanish (Chile)
+        - desc: Espa?ol (Costa Rica)
+          code: es-CR
+          value: es-CR
+          descEn: Spanish (Costa Rica)
+        - desc: Espa?ol (Ecuador)
+          code: es-EC
+          value: es-EC
+          descEn: Spanish (Ecuador)
+        - desc: Espa?ol (El Salvador)
+          code: es-SV
+          value: es-SV
+          descEn: Spanish (El Salvador)
+        - desc: Espa?ol (Estados Unidos)
+          code: es-US
+          value: es-US
+          descEn: Spanish (United States)
+        - desc: Espa?ol (Guatemala)
+          code: es-GT
+          value: es-GT
+          descEn: Spanish (Guatemala)
+        - desc: Espa?ol (Honduras)
+          code: es-HN
+          value: es-HN
+          descEn: Spanish (Honduras)
+        - desc: Espa?ol (Nicaragua)
+          code: es-NI
+          value: es-NI
+          descEn: Spanish (Nicaragua)
+        - desc: Espa?ol (Panamá)
+          code: es-PA
+          value: es-PA
+          descEn: Spanish (Panama)
+        - desc: Espa?ol (Paraguay)
+          code: es-PY
+          value: es-PY
+          descEn: Spanish (Paraguay)
+        - desc: Espa?ol (Perú)
+          code: es-PE
+          value: es-PE
+          descEn: Spanish (Peru)
+        - desc: Espa?ol (Puerto Rico)
+          code: es-PR
+          value: es-PR
+          descEn: Spanish (Puerto Rico)
+        - desc: Espa?ol (República Dominicana)
+          code: es-DO
+          value: es-DO
+          descEn: Spanish (Dominican Republic)
+        - desc: Espa?ol (Uruguay)
+          code: es-UY
+          value: es-UY
+          descEn: Spanish (Uruguay)
+        - desc: Espa?ol (Venezuela)
+          code: es-VE
+          value: es-VE
+          descEn: Spanish (Venezuela)
+        - desc: Euskara (Espainia)
+          code: eu-ES
+          value: eu-ES
+          descEn: Basque (Spain)
+        - desc: Filipino (Pilipinas)
+          code: fil-PH
+          value: fil-PH
+          descEn: Filipino (Philippines)
+        - desc: Galego (Espa?a)
+          code: gl-ES
+          value: gl-ES
+          descEn: Galician (Spain)
+        - desc: ??????? (??????????)
+          code: ka-GE
+          value: ka-GE
+          descEn: Georgian (Georgia)
+        - desc: ??????? (????)
+          code: gu-IN
+          value: gu-IN
+          descEn: Gujarati (India)
+        - desc: Hrvatski (Hrvatska)
+          code: hr-HR
+          value: hr-HR
+          descEn: Croatian (Croatia)
+        - desc: IsiZulu (Ningizimu Afrika)
+          code: zu-ZA
+          value: zu-ZA
+          descEn: Zulu (South Africa)
+        - desc: ?slenska (?sland)
+          code: is-IS
+          value: is-IS
+          descEn: Icelandic (Iceland)
+        - desc: Jawa (Indonesia)
+          code: jv-ID
+          value: jv-ID
+          descEn: Javanese (Indonesia)
+        - desc: ????? (????)
+          code: kn-IN
+          value: kn-IN
+          descEn: Kannada (India)
+        - desc: ????????? (???????)
+          code: km-KH
+          value: km-KH
+          descEn: Khmer (Cambodia)
+        - desc: ??? (???)
+          code: lo-LA
+          value: lo-LA
+          descEn: Lao (Laos)
+        - desc: Latvie?u (latvie?u)
+          code: lv-LV
+          value: lv-LV
+          descEn: Latvian (Latvia)
+        - desc: Lietuvi? (Lietuva)
+          code: lt-LT
+          value: lt-LT
+          descEn: Lithuanian (Lithuania)
+        - desc: Magyar (Magyarország)
+          code: hu-HU
+          value: hu-HU
+          descEn: Hungarian (Hungary)
+        - desc: ?????? (??????)
+          code: ml-IN
+          value: ml-IN
+          descEn: Malayalam (India)
+        - desc: ????? (????)
+          code: mr-IN
+          value: mr-IN
+          descEn: Marathi (India)
+        - desc: ?????? (?????)
+          code: ne-NP
+          value: ne-NP
+          descEn: Nepali (Nepal)
+        - desc: Polski (Polska)
+          code: pl-PL
+          value: pl-PL
+          descEn: Polish (Poland)
+        - desc: Português (Brasil)
+          code: pt-BR
+          value: pt-BR
+          descEn: Portuguese (Brazil)
+        - desc: Rom?n? (Rom?nia)
+          code: ro-RO
+          value: ro-RO
+          descEn: Romanian (Romania)
+        - desc: ????? (???? ?????)
+          code: si-LK
+          value: si-LK
+          descEn: Sinhala (Sri Lanka)
+        - desc: Sloven?ina (Slovensko)
+          code: sk-SK
+          value: sk-SK
+          descEn: Slovak (Slovakia)
+        - desc: Sloven??ina (Slovenija)
+          code: sl-SI
+          value: sl-SI
+          descEn: Slovenian (Slovenia)
+        - desc: Urang (Indonesia)
+          code: su-ID
+          value: su-ID
+          descEn: Sundanese (Indonesia)
+        - desc: Swahili (Tanzania)
+          code: sw-TZ
+          value: sw-TZ
+          descEn: Swahili (Tanzania)
+        - desc: Swahili (Kenya)
+          code: sw-KE
+          value: sw-KE
+          descEn: Swahili (Kenya)
+        - desc: Suomi (Suomi)
+          code: fi-FI
+          value: fi-FI
+          descEn: Finnish (Finland)
+        - desc: ????? (???????)
+          code: ta-IN
+          value: ta-IN
+          descEn: Tamil (India)
+        - desc: ?????? (????????)
+          code: te-IN
+          value: te-IN
+          descEn: Telugu (India)
+        - desc: Ti?ng Vi?t (Vi?t Nam)
+          code: vi-VN
+          value: vi-VN
+          descEn: Vietnamese (Vietnam)
+        - desc: Ελληνικ? (Ελλ?δα)
+          code: el-GR
+          value: el-GR
+          descEn: Greek (Greece)
+        - desc: Български (България)
+          code: bg-BG
+          value: bg-BG
+          descEn: Bulgarian (Bulgaria)
+        - desc: Српски (Срби?а)
+          code: sr-RS
+          value: sr-RS
+          descEn: Serbian (Serbia)
+        - desc: Укра?нська (Укра?на)
+          code: uk-UA
+          value: uk-UA
+          descEn: Ukrainian (Ukraine)
+        - desc: ????? (?????)
+          code: he-IL
+          value: he-IL
+          descEn: Hebrew (Israel)
+        - desc: ??????? (???????)
+          code: ar-IL
+          value: ar-IL
+          descEn: Arabic (Israel)
+        - desc: ??????? (??????)
+          code: ar-JO
+          value: ar-JO
+          descEn: Arabic (Jordan)
+        - desc: ??????? (????????)
+          code: ar-AE
+          value: ar-AE
+          descEn: Arabic (United Arab Emirates)
+        - desc: ??????? (???????)
+          code: ar-BH
+          value: ar-BH
+          descEn: Arabic (Bahrain)
+        - desc: ??????? (???????)
+          code: ar-DZ
+          value: ar-DZ
+          descEn: Arabic (Algeria)
+        - desc: ??????? (????????)
+          code: ar-SA
+          value: ar-SA
+          descEn: Arabic (Saudi Arabia)
+        - desc: ??????? (??????)
+          code: ar-IQ
+          value: ar-IQ
+          descEn: Arabic (Iraq)
+        - desc: ??????? (??????)
+          code: ar-KW
+          value: ar-KW
+          descEn: Arabic (Kuwait)
+        - desc: ??????? (??????)
+          code: ar-MA
+          value: ar-MA
+          descEn: Arabic (Morocco)
+        - desc: ??????? (????)
+          code: ar-TN
+          value: ar-TN
+          descEn: Arabic (Tunisia)
+        - desc: ??????? (?????)
+          code: ar-OM
+          value: ar-OM
+          descEn: Arabic (Oman)
+        - desc: ??????? (??????)
+          code: ar-PS
+          value: ar-PS
+          descEn: Arabic (State of Palestine)
+        - desc: ??????? (???)
+          code: ar-QA
+          value: ar-QA
+          descEn: Arabic (Qatar)
+        - desc: ??????? (?????)
+          code: ar-LB
+          value: ar-LB
+          descEn: Arabic (Lebanon)
+        - desc: ??????? (???)
+          code: ar-EG
+          value: ar-EG
+          descEn: Arabic (Egypt)
+        - desc: ????? (?????)
+          code: fa-IR
+          value: fa-IR
+          descEn: Persian (Iran)
+    - name: custom
+      enable: true
+      key: 订阅值
+      region: 区域
+      order: 2
+      projects:
+        - lt_win
+        - lt_mac
+      engineList:
+        - code: en-US
+          value: en-US
+          desc: 英文
+        - code: zh-CN
+          value: zh-CN
+          desc: 中文
+    - name: newtranx
+      enable: false
+      key: 订阅值
+      region: 区域
+      order: 3
+      projects:
+        - lt_win
+        - lt_mac
+      appId: k6ttLa8y
+      secret: d473779f3e306ad3e10458203db674f72966643d
+      engineList:
+        - code: en-US
+          value: en
+          desc: 英文
+        - code: zh-CN
+          value: zh
+          desc: 中文
+        - code: es-ES
+          value: es
+          desc: 西班牙
+        - code: ja-JP
+          value: ja
+          desc: 日语
+        - code: fr-FR
+          value: fr
+          desc: 法语
+        - code: de-DE
+          value: de
+          desc: 德语
+        - code: ko-KR
+          value: ko
+          desc: 韩语
+        - code: ru-RU
+          value: ru
+          desc: 俄语
+meetingSpeechTranslation:
+  policy: [ ]
+  engine:
+    - name: microsoft
+      enable: true
+      key: 订阅值
+      region: 区域
+      engineList:
+        - code: hi-IN
+          value: hi-IN
+          descEn: Hindi (India)
+          desc: 印地语(印度)
+          translateCode: hi
+        - code: it-IT
+          value: it-IT
+          descEn: Italian (Italy)
+          desc: 意大利语(意大利)
+          translateCode: it
+        - code: da-DK
+          value: da-DK
+          descEn: Danish (Denmark)
+          desc: 丹麦语(丹麦)
+          translateCode: da
+        - code: ja-JP
+          value: ja-JP
+          descEn: Japanese (Japan)
+          desc: 日语(日本)
+          translateCode: ja
+        - code: en-AU
+          value: en-AU
+          descEn: English (Australia)
+          desc: 英语(澳大利亚)
+          translateCode: en
+        - code: nb-NO
+          value: nb-NO
+          descEn: Norwegian (Bokm?l) (Norway)
+          desc: 书面挪威语(挪威)
+          translateCode: nb
+        - code: en-CA
+          value: en-CA
+          descEn: English (Canada)
+          desc: 英语(加拿大)
+          translateCode: en
+        - code: en-IN
+          value: en-IN
+          descEn: English (India)
+          desc: 英语(印度)
+          translateCode: en
+        - code: en-NZ
+          value: en-NZ
+          descEn: English (New Zealand)
+          desc: 英语(新西兰)
+          translateCode: en
+        - code: es-ES
+          value: es-ES
+          descEn: Spanish (Spain)
+          desc: 西班牙语(西班牙)
+          translateCode: es
+        - code: sv-SE
+          value: sv-SE
+          descEn: Swedish (Sweden)
+          desc: 瑞典语(瑞典)
+          translateCode: sv
+        - code: es-MX
+          value: es-MX
+          descEn: Spanish (Mexico)
+          desc: 西班牙语(墨西哥)
+          translateCode: es
+        - code: zh-CN
+          value: zh-CN
+          descEn: 'Chinese (Mandarin, simplified)'
+          desc: 中文(普通话，简体)
+          translateCode: zh-Hans
+        - code: zh-HK
+          value: zh-HK
+          descEn: Chinese
+          desc: 中文(粤语)
+          translateCode: yue
+        - code: fr-CA
+          value: fr-CA
+          descEn: French (Canada)
+          desc: 法语(加拿大)
+          translateCode: fr
+        - code: fr-FR
+          value: fr-FR
+          descEn: French (France)
+          desc: 法语(法国)
+          translateCode: fr
+        - desc: English (United States)
+          code: en-US
+          value: en-US
+          descEn: English (United States)
+          translateCode: en
+        - desc: English (Great Britain)
+          code: en-GB
+          value: en-GB
+          descEn: English (United Kingdom)
+          translateCode: en
+        - desc: Deutsch (Deutschland)
+          code: de-DE
+          value: de-DE
+          descEn: German (Germany)
+          translateCode: de
+        - desc: Espa?ol (Colombia)
+          code: es-CO
+          value: es-CO
+          descEn: Spanish (Colombia)
+          translateCode: es
+        - desc: ??? (????)
+          code: ko-KR
+          value: ko-KR
+          descEn: Korean (South Korea)
+          translateCode: ko
+        - desc: Nederlands (Nederland)
+          code: nl-NL
+          value: nl-NL
+          descEn: Dutch (Netherlands)
+          translateCode: nl
+        - desc: Português (Portugal)
+          code: pt-PT
+          value: pt-PT
+          descEn: Portuguese (Portugal)
+          translateCode: pt-PT
+        - desc: Русский (Россия)
+          code: ru-RU
+          value: ru-RU
+          descEn: Russian (Russia)
+          translateCode: ru
+        - desc: ??? (?????????)
+          code: th-TH
+          value: th-TH
+          descEn: Thai (Thailand)
+          translateCode: th
+        - desc: Türk?e (Türkiye)
+          code: tr-TR
+          value: tr-TR
+          descEn: Turkish (Turkey)
+          translateCode: tr
+        - desc: 國語 (台灣)
+          code: zh-TW
+          value: zh-TW
+          descEn: 'Chinese, Mandarin (Traditional, Taiwan)'
+          translateCode: zh-Hant
+        - desc: Afrikaans (Suid-Afrika)
+          code: af-ZA
+          value: af-ZA
+          descEn: Afrikaans (South Africa)
+          translateCode: af
+        - desc: ???? (?????)
+          code: am-ET
+          value: am-ET
+          descEn: Amharic (Ethiopia)
+          translateCode: am
+        - desc: ??? (????????)
+          code: hy-AM
+          value: hy-AM
+          descEn: Armenian (Armenia)
+          translateCode: hy
+        - desc: Az?rbaycan (Az?rbaycan)
+          code: az-AZ
+          value: az-AZ
+          descEn: Azerbaijani (Azerbaijan)
+          translateCode: az
+        - desc: Bahasa Indonesia (Indonesia)
+          code: id-ID
+          value: id-ID
+          descEn: Indonesian (Indonesia)
+          translateCode: id
+        - desc: Bahasa Melayu (Malaysia)
+          code: ms-MY
+          value: ms-MY
+          descEn: Malay (Malaysia)
+          translateCode: ms
+        - desc: ????? (????????)
+          code: bn-BD
+          value: bn-BD
+          descEn: Bengali (Bangladesh)
+          translateCode: bn
+        - desc: ????? (????)
+          code: bn-IN
+          value: bn-IN
+          descEn: Bengali (India)
+          translateCode: bn
+        - desc: Català (Espanya)
+          code: ca-ES
+          value: ca-ES
+          descEn: Catalan (Spain)
+          translateCode: ca
+        - desc: ?e?tina (?eská republika)
+          code: cs-CZ
+          value: cs-CZ
+          descEn: Czech (Czech Republic)
+          translateCode: cs
+        - desc: English (Ghana)
+          code: en-GH
+          value: en-GH
+          descEn: English (Ghana)
+          translateCode: en
+        - desc: English (Ireland)
+          code: en-IE
+          value: en-IE
+          descEn: English (Ireland)
+          translateCode: en
+        - desc: English (Kenya)
+          code: en-KE
+          value: en-KE
+          descEn: English (Kenya)
+          translateCode: en
+        - desc: English (Nigeria)
+          code: en-NG
+          value: en-NG
+          descEn: English (Nigeria)
+          translateCode: en
+        - desc: English (Philippines)
+          code: en-PH
+          value: en-PH
+          descEn: English (Philippines)
+          translateCode: en
+        - desc: English (Singapore)
+          code: en-SG
+          value: en-SG
+          descEn: English (Singapore)
+          translateCode: en
+        - desc: English (South Africa)
+          code: en-ZA
+          value: en-ZA
+          descEn: English (South Africa)
+          translateCode: en
+        - desc: English (Tanzania)
+          code: en-TZ
+          value: en-TZ
+          descEn: English (Tanzania)
+          translateCode: en
+        - desc: Espa?ol (Argentina)
+          code: es-AR
+          value: es-AR
+          descEn: Spanish (Argentina)
+          translateCode: es
+        - desc: Espa?ol (Bolivia)
+          code: es-BO
+          value: es-BO
+          descEn: Spanish (Bolivia)
+          translateCode: es
+        - desc: Espa?ol (Chile)
+          code: es-CL
+          value: es-CL
+          descEn: Spanish (Chile)
+          translateCode: es
+        - desc: Espa?ol (Costa Rica)
+          code: es-CR
+          value: es-CR
+          descEn: Spanish (Costa Rica)
+          translateCode: es
+        - desc: Espa?ol (Ecuador)
+          code: es-EC
+          value: es-EC
+          descEn: Spanish (Ecuador)
+          translateCode: es
+        - desc: Espa?ol (El Salvador)
+          code: es-SV
+          value: es-SV
+          descEn: Spanish (El Salvador)
+          translateCode: es
+        - desc: Espa?ol (Estados Unidos)
+          code: es-US
+          value: es-US
+          descEn: Spanish (United States)
+          translateCode: es
+        - desc: Espa?ol (Guatemala)
+          code: es-GT
+          value: es-GT
+          descEn: Spanish (Guatemala)
+          translateCode: es
+        - desc: Espa?ol (Honduras)
+          code: es-HN
+          value: es-HN
+          descEn: Spanish (Honduras)
+          translateCode: es
+        - desc: Espa?ol (Nicaragua)
+          code: es-NI
+          value: es-NI
+          descEn: Spanish (Nicaragua)
+          translateCode: es
+        - desc: Espa?ol (Panamá)
+          code: es-PA
+          value: es-PA
+          descEn: Spanish (Panama)
+          translateCode: es
+        - desc: Espa?ol (Paraguay)
+          code: es-PY
+          value: es-PY
+          descEn: Spanish (Paraguay)
+          translateCode: es
+        - desc: Espa?ol (Perú)
+          code: es-PE
+          value: es-PE
+          descEn: Spanish (Peru)
+          translateCode: es
+        - desc: Espa?ol (Puerto Rico)
+          code: es-PR
+          value: es-PR
+          descEn: Spanish (Puerto Rico)
+          translateCode: es
+        - desc: Espa?ol (República Dominicana)
+          code: es-DO
+          value: es-DO
+          descEn: Spanish (Dominican Republic)
+          translateCode: es
+        - desc: Espa?ol (Uruguay)
+          code: es-UY
+          value: es-UY
+          descEn: Spanish (Uruguay)
+          translateCode: es
+        - desc: Espa?ol (Venezuela)
+          code: es-VE
+          value: es-VE
+          descEn: Spanish (Venezuela)
+          translateCode: es
+        - desc: Euskara (Espainia)
+          code: eu-ES
+          value: eu-ES
+          descEn: Basque (Spain)
+          translateCode: eu
+        - desc: Filipino (Pilipinas)
+          code: fil-PH
+          value: fil-PH
+          descEn: Filipino (Philippines)
+          translateCode: fil
+        - desc: Galego (Espa?a)
+          code: gl-ES
+          value: gl-ES
+          descEn: Galician (Spain)
+          translateCode: gl
+        - desc: ??????? (??????????)
+          code: ka-GE
+          value: ka-GE
+          descEn: Georgian (Georgia)
+          translateCode: ka
+        - desc: ??????? (????)
+          code: gu-IN
+          value: gu-IN
+          descEn: Gujarati (India)
+          translateCode: gu
+        - desc: Hrvatski (Hrvatska)
+          code: hr-HR
+          value: hr-HR
+          descEn: Croatian (Croatia)
+          translateCode: hr
+        - desc: IsiZulu (Ningizimu Afrika)
+          code: zu-ZA
+          value: zu-ZA
+          descEn: Zulu (South Africa)
+          translateCode: zu
+        - desc: ?slenska (?sland)
+          code: is-IS
+          value: is-IS
+          descEn: Icelandic (Iceland)
+          translateCode: is
+        - desc: Jawa (Indonesia)
+          code: jv-ID
+          value: jv-ID
+          descEn: Javanese (Indonesia)
+          translateCode: jv
+        - desc: ????? (????)
+          code: kn-IN
+          value: kn-IN
+          descEn: Kannada (India)
+          translateCode: kn
+        - desc: ????????? (???????)
+          code: km-KH
+          value: km-KH
+          descEn: Khmer (Cambodia)
+          translateCode: km
+        - desc: ??? (???)
+          code: lo-LA
+          value: lo-LA
+          descEn: Lao (Laos)
+          translateCode: lo
+        - desc: Latvie?u (latvie?u)
+          code: lv-LV
+          value: lv-LV
+          descEn: Latvian (Latvia)
+          translateCode: lv
+        - desc: Lietuvi? (Lietuva)
+          code: lt-LT
+          value: lt-LT
+          descEn: Lithuanian (Lithuania)
+          translateCode: lt
+        - desc: Magyar (Magyarország)
+          code: hu-HU
+          value: hu-HU
+          descEn: Hungarian (Hungary)
+          translateCode: hu
+        - desc: ?????? (??????)
+          code: ml-IN
+          value: ml-IN
+          descEn: Malayalam (India)
+          translateCode: ml
+        - desc: ????? (????)
+          code: mr-IN
+          value: mr-IN
+          descEn: Marathi (India)
+          translateCode: mr
+        - desc: ?????? (?????)
+          code: ne-NP
+          value: ne-NP
+          descEn: Nepali (Nepal)
+          translateCode: ne
+        - desc: Polski (Polska)
+          code: pl-PL
+          value: pl-PL
+          descEn: Polish (Poland)
+          translateCode: pl
+        - desc: Português (Brasil)
+          code: pt-BR
+          value: pt-BR
+          descEn: Portuguese (Brazil)
+          translateCode: pt
+        - desc: Rom?n? (Rom?nia)
+          code: ro-RO
+          value: ro-RO
+          descEn: Romanian (Romania)
+          translateCode: ro
+        - desc: ????? (???? ?????)
+          code: si-LK
+          value: si-LK
+          descEn: Sinhala (Sri Lanka)
+          translateCode: si
+        - desc: Sloven?ina (Slovensko)
+          code: sk-SK
+          value: sk-SK
+          descEn: Slovak (Slovakia)
+          translateCode: sk
+        - desc: Sloven??ina (Slovenija)
+          code: sl-SI
+          value: sl-SI
+          descEn: Slovenian (Slovenia)
+          translateCode: sl
+        - desc: Urang (Indonesia)
+          code: su-ID
+          value: su-ID
+          descEn: Sundanese (Indonesia)
+          translateCode: su
+        - desc: Swahili (Tanzania)
+          code: sw-TZ
+          value: sw-TZ
+          descEn: Swahili (Tanzania)
+          translateCode: sw
+        - desc: Swahili (Kenya)
+          code: sw-KE
+          value: sw-KE
+          descEn: Swahili (Kenya)
+          translateCode: sw
+        - desc: Suomi (Suomi)
+          code: fi-FI
+          value: fi-FI
+          descEn: Finnish (Finland)
+          translateCode: fi
+        - desc: ????? (???????)
+          code: ta-IN
+          value: ta-IN
+          descEn: Tamil (India)
+          translateCode: ta
+        - desc: ?????? (????????)
+          code: te-IN
+          value: te-IN
+          descEn: Telugu (India)
+          translateCode: te
+        - desc: Ti?ng Vi?t (Vi?t Nam)
+          code: vi-VN
+          value: vi-VN
+          descEn: Vietnamese (Vietnam)
+          translateCode: vi
+        - desc: Ελληνικ? (Ελλ?δα)
+          code: el-GR
+          value: el-GR
+          descEn: Greek (Greece)
+          translateCode: el
+        - desc: Български (България)
+          code: bg-BG
+          value: bg-BG
+          descEn: Bulgarian (Bulgaria)
+          translateCode: bg
+        - desc: Српски (Срби?а)
+          code: sr-RS
+          value: sr-RS
+          descEn: Serbian (Serbia)
+          translateCode: sr
+        - desc: Укра?нська (Укра?на)
+          code: uk-UA
+          value: uk-UA
+          descEn: Ukrainian (Ukraine)
+          translateCode: uk
+        - desc: ????? (?????)
+          code: he-IL
+          value: he-IL
+          descEn: Hebrew (Israel)
+          translateCode: he
+        - desc: ??????? (???????)
+          code: ar-IL
+          value: ar-IL
+          descEn: Arabic (Israel)
+          translateCode: ar
+        - desc: ??????? (??????)
+          code: ar-JO
+          value: ar-JO
+          descEn: Arabic (Jordan)
+          translateCode: ar
+        - desc: ??????? (????????)
+          code: ar-AE
+          value: ar-AE
+          descEn: Arabic (United Arab Emirates)
+          translateCode: ar
+        - desc: ??????? (???????)
+          code: ar-BH
+          value: ar-BH
+          descEn: Arabic (Bahrain)
+          translateCode: ar
+        - desc: ??????? (???????)
+          code: ar-DZ
+          value: ar-DZ
+          descEn: Arabic (Algeria)
+          translateCode: ar
+        - desc: ??????? (????????)
+          code: ar-SA
+          value: ar-SA
+          descEn: Arabic (Saudi Arabia)
+          translateCode: ar
+        - desc: ??????? (??????)
+          code: ar-IQ
+          value: ar-IQ
+          descEn: Arabic (Iraq)
+          translateCode: ar
+        - desc: ??????? (??????)
+          code: ar-KW
+          value: ar-KW
+          descEn: Arabic (Kuwait)
+          translateCode: ar
+        - desc: ??????? (??????)
+          code: ar-MA
+          value: ar-MA
+          descEn: Arabic (Morocco)
+          translateCode: ar
+        - desc: ??????? (????)
+          code: ar-TN
+          value: ar-TN
+          descEn: Arabic (Tunisia)
+          translateCode: ar
+        - desc: ??????? (?????)
+          code: ar-OM
+          value: ar-OM
+          descEn: Arabic (Oman)
+          translateCode: ar
+        - desc: ??????? (??????)
+          code: ar-PS
+          value: ar-PS
+          descEn: Arabic (State of Palestine)
+          translateCode: ar
+        - desc: ??????? (???)
+          code: ar-QA
+          value: ar-QA
+          descEn: Arabic (Qatar)
+          translateCode: ar
+        - desc: ??????? (?????)
+          code: ar-LB
+          value: ar-LB
+          descEn: Arabic (Lebanon)
+          translateCode: ar
+        - desc: ??????? (???)
+          code: ar-EG
+          value: ar-EG
+          descEn: Arabic (Egypt)
+          translateCode: ar
+        - desc: ????? (?????)
+          code: fa-IR
+          value: fa-IR
+          descEn: Persian (Iran)
+          translateCode: fa
+multiSpeechTranslation:
+  policy:
+    - srcCode: zh-HK
+      engine: google
+    - srcCode: ar-IL
+      engine: google
+    - srcCode: ar-LB
+      engine: google
+    - srcCode: ar-PS
+      engine: google
+    - srcCode: ar-TN
+      engine: google
+    - srcCode: ta-SG
+      engine: google
+    - srcCode: ta-LK
+      engine: google
+    - srcCode: ta-MY
+      engine: google
+    - srcCode: is-IS
+      engine: google
+    - srcCode: ur-IN
+      engine: google
+    - srcCode: ur-PK
+      engine: google
+    - srcCode: ms-MY
+      engine: google
+  engine:
+    - name: microsoft
+      enable: true
+      key: 订阅值
+      region: 区域
+      order: 1
+      engineList:
+        - code: hi-IN
+          value: hi-IN
+          descEn: Hindi (India)
+          desc: 印地语(印度)
+        - code: it-IT
+          value: it-IT
+          descEn: Italian (Italy)
+          desc: 意大利语(意大利)
+        - code: da-DK
+          value: da-DK
+          descEn: Danish (Denmark)
+          desc: 丹麦语(丹麦)
+        - code: ja-JP
+          value: ja-JP
+          descEn: Japanese (Japan)
+          desc: 日语(日本)
+        - code: en-AU
+          value: en-AU
+          descEn: English (Australia)
+          desc: 英语(澳大利亚)
+        - code: nb-NO
+          value: nb-NO
+          descEn: Norwegian (Bokm?l) (Norway)
+          desc: 书面挪威语(挪威)
+        - code: en-CA
+          value: en-CA
+          descEn: English (Canada)
+          desc: 英语(加拿大)
+        - code: en-IN
+          value: en-IN
+          descEn: English (India)
+          desc: 英语(印度)
+        - code: en-NZ
+          value: en-NZ
+          descEn: English (New Zealand)
+          desc: 英语(新西兰)
+        - code: es-ES
+          value: es-ES
+          descEn: Spanish (Spain)
+          desc: 西班牙语(西班牙)
+        - code: sv-SE
+          value: sv-SE
+          descEn: Swedish (Sweden)
+          desc: 瑞典语(瑞典)
+        - code: es-MX
+          value: es-MX
+          descEn: Spanish (Mexico)
+          desc: 西班牙语(墨西哥)
+        - code: zh-CN
+          value: zh-CN
+          descEn: 'Chinese (Mandarin, simplified)'
+          desc: 中文(普通话，简体)
+        - code: fr-CA
+          value: fr-CA
+          descEn: French (Canada)
+          desc: 法语(加拿大)
+        - code: fr-FR
+          value: fr-FR
+          descEn: French (France)
+          desc: 法语(法国)
+        - desc: English (United States)
+          code: en-US
+          value: en-US
+          descEn: English (United States)
+        - desc: English (Great Britain)
+          code: en-GB
+          value: en-GB
+          descEn: English (United Kingdom)
+        - desc: Deutsch (Deutschland)
+          code: de-DE
+          value: de-DE
+          descEn: German (Germany)
+        - desc: Espa?ol (Colombia)
+          code: es-CO
+          value: es-CO
+          descEn: Spanish (Colombia)
+        - desc: ??? (????)
+          code: ko-KR
+          value: ko-KR
+          descEn: Korean (South Korea)
+        - desc: Nederlands (Nederland)
+          code: nl-NL
+          value: nl-NL
+          descEn: Dutch (Netherlands)
+        - desc: Português (Portugal)
+          code: pt-PT
+          value: pt-PT
+          descEn: Portuguese (Portugal)
+        - desc: Русский (Россия)
+          code: ru-RU
+          value: ru-RU
+          descEn: Russian (Russia)
+        - desc: ??? (?????????)
+          code: th-TH
+          value: th-TH
+          descEn: Thai (Thailand)
+        - desc: Türk?e (Türkiye)
+          code: tr-TR
+          value: tr-TR
+          descEn: Turkish (Turkey)
+        - desc: 國語 (台灣)
+          code: zh-TW
+          value: zh-TW
+          descEn: 'Chinese, Mandarin (Traditional, Taiwan)'
+        - desc: Afrikaans (Suid-Afrika)
+          code: af-ZA
+          value: af-ZA
+          descEn: Afrikaans (South Africa)
+        - desc: ???? (?????)
+          code: am-ET
+          value: am-ET
+          descEn: Amharic (Ethiopia)
+        - desc: ??? (????????)
+          code: hy-AM
+          value: hy-AM
+          descEn: Armenian (Armenia)
+        - desc: Az?rbaycan (Az?rbaycan)
+          code: az-AZ
+          value: az-AZ
+          descEn: Azerbaijani (Azerbaijan)
+        - desc: Bahasa Indonesia (Indonesia)
+          code: id-ID
+          value: id-ID
+          descEn: Indonesian (Indonesia)
+        - desc: Bahasa Melayu (Malaysia)
+          code: ms-MY
+          value: ms-MY
+          descEn: Malay (Malaysia)
+        - desc: ????? (????????)
+          code: bn-BD
+          value: bn-BD
+          descEn: Bengali (Bangladesh)
+        - desc: ????? (????)
+          code: bn-IN
+          value: bn-IN
+          descEn: Bengali (India)
+        - desc: Català (Espanya)
+          code: ca-ES
+          value: ca-ES
+          descEn: Catalan (Spain)
+        - desc: ?e?tina (?eská republika)
+          code: cs-CZ
+          value: cs-CZ
+          descEn: Czech (Czech Republic)
+        - desc: English (Ghana)
+          code: en-GH
+          value: en-GH
+          descEn: English (Ghana)
+        - desc: English (Ireland)
+          code: en-IE
+          value: en-IE
+          descEn: English (Ireland)
+        - desc: English (Kenya)
+          code: en-KE
+          value: en-KE
+          descEn: English (Kenya)
+        - desc: English (Nigeria)
+          code: en-NG
+          value: en-NG
+          descEn: English (Nigeria)
+        - desc: English (Philippines)
+          code: en-PH
+          value: en-PH
+          descEn: English (Philippines)
+        - desc: English (Singapore)
+          code: en-SG
+          value: en-SG
+          descEn: English (Singapore)
+        - desc: English (South Africa)
+          code: en-ZA
+          value: en-ZA
+          descEn: English (South Africa)
+        - desc: English (Tanzania)
+          code: en-TZ
+          value: en-TZ
+          descEn: English (Tanzania)
+        - desc: Espa?ol (Argentina)
+          code: es-AR
+          value: es-AR
+          descEn: Spanish (Argentina)
+        - desc: Espa?ol (Bolivia)
+          code: es-BO
+          value: es-BO
+          descEn: Spanish (Bolivia)
+        - desc: Espa?ol (Chile)
+          code: es-CL
+          value: es-CL
+          descEn: Spanish (Chile)
+        - desc: Espa?ol (Costa Rica)
+          code: es-CR
+          value: es-CR
+          descEn: Spanish (Costa Rica)
+        - desc: Espa?ol (Ecuador)
+          code: es-EC
+          value: es-EC
+          descEn: Spanish (Ecuador)
+        - desc: Espa?ol (El Salvador)
+          code: es-SV
+          value: es-SV
+          descEn: Spanish (El Salvador)
+        - desc: Espa?ol (Estados Unidos)
+          code: es-US
+          value: es-US
+          descEn: Spanish (United States)
+        - desc: Espa?ol (Guatemala)
+          code: es-GT
+          value: es-GT
+          descEn: Spanish (Guatemala)
+        - desc: Espa?ol (Honduras)
+          code: es-HN
+          value: es-HN
+          descEn: Spanish (Honduras)
+        - desc: Espa?ol (Nicaragua)
+          code: es-NI
+          value: es-NI
+          descEn: Spanish (Nicaragua)
+        - desc: Espa?ol (Panamá)
+          code: es-PA
+          value: es-PA
+          descEn: Spanish (Panama)
+        - desc: Espa?ol (Paraguay)
+          code: es-PY
+          value: es-PY
+          descEn: Spanish (Paraguay)
+        - desc: Espa?ol (Perú)
+          code: es-PE
+          value: es-PE
+          descEn: Spanish (Peru)
+        - desc: Espa?ol (Puerto Rico)
+          code: es-PR
+          value: es-PR
+          descEn: Spanish (Puerto Rico)
+        - desc: Espa?ol (República Dominicana)
+          code: es-DO
+          value: es-DO
+          descEn: Spanish (Dominican Republic)
+        - desc: Espa?ol (Uruguay)
+          code: es-UY
+          value: es-UY
+          descEn: Spanish (Uruguay)
+        - desc: Espa?ol (Venezuela)
+          code: es-VE
+          value: es-VE
+          descEn: Spanish (Venezuela)
+        - desc: Euskara (Espainia)
+          code: eu-ES
+          value: eu-ES
+          descEn: Basque (Spain)
+        - desc: Filipino (Pilipinas)
+          code: fil-PH
+          value: fil-PH
+          descEn: Filipino (Philippines)
+        - desc: Galego (Espa?a)
+          code: gl-ES
+          value: gl-ES
+          descEn: Galician (Spain)
+        - desc: ??????? (??????????)
+          code: ka-GE
+          value: ka-GE
+          descEn: Georgian (Georgia)
+        - desc: ??????? (????)
+          code: gu-IN
+          value: gu-IN
+          descEn: Gujarati (India)
+        - desc: Hrvatski (Hrvatska)
+          code: hr-HR
+          value: hr-HR
+          descEn: Croatian (Croatia)
+        - desc: IsiZulu (Ningizimu Afrika)
+          code: zu-ZA
+          value: zu-ZA
+          descEn: Zulu (South Africa)
+        - desc: Jawa (Indonesia)
+          code: jv-ID
+          value: jv-ID
+          descEn: Javanese (Indonesia)
+        - desc: ????? (????)
+          code: kn-IN
+          value: kn-IN
+          descEn: Kannada (India)
+        - desc: ????????? (???????)
+          code: km-KH
+          value: km-KH
+          descEn: Khmer (Cambodia)
+        - desc: ??? (???)
+          code: lo-LA
+          value: lo-LA
+          descEn: Lao (Laos)
+        - desc: Latvie?u (latvie?u)
+          code: lv-LV
+          value: lv-LV
+          descEn: Latvian (Latvia)
+        - desc: Lietuvi? (Lietuva)
+          code: lt-LT
+          value: lt-LT
+          descEn: Lithuanian (Lithuania)
+        - desc: Magyar (Magyarország)
+          code: hu-HU
+          value: hu-HU
+          descEn: Hungarian (Hungary)
+        - desc: ?????? (??????)
+          code: ml-IN
+          value: ml-IN
+          descEn: Malayalam (India)
+        - desc: ????? (????)
+          code: mr-IN
+          value: mr-IN
+          descEn: Marathi (India)
+        - desc: ?????? (?????)
+          code: ne-NP
+          value: ne-NP
+          descEn: Nepali (Nepal)
+        - desc: Polski (Polska)
+          code: pl-PL
+          value: pl-PL
+          descEn: Polish (Poland)
+        - desc: Português (Brasil)
+          code: pt-BR
+          value: pt-BR
+          descEn: Portuguese (Brazil)
+        - desc: Rom?n? (Rom?nia)
+          code: ro-RO
+          value: ro-RO
+          descEn: Romanian (Romania)
+        - desc: ????? (???? ?????)
+          code: si-LK
+          value: si-LK
+          descEn: Sinhala (Sri Lanka)
+        - desc: Sloven?ina (Slovensko)
+          code: sk-SK
+          value: sk-SK
+          descEn: Slovak (Slovakia)
+        - desc: Sloven??ina (Slovenija)
+          code: sl-SI
+          value: sl-SI
+          descEn: Slovenian (Slovenia)
+        - desc: Urang (Indonesia)
+          code: su-ID
+          value: su-ID
+          descEn: Sundanese (Indonesia)
+        - desc: Swahili (Tanzania)
+          code: sw-TZ
+          value: sw-TZ
+          descEn: Swahili (Tanzania)
+        - desc: Swahili (Kenya)
+          code: sw-KE
+          value: sw-KE
+          descEn: Swahili (Kenya)
+        - desc: Suomi (Suomi)
+          code: fi-FI
+          value: fi-FI
+          descEn: Finnish (Finland)
+        - desc: ????? (???????)
+          code: ta-IN
+          value: ta-IN
+          descEn: Tamil (India)
+        - desc: ?????? (????????)
+          code: te-IN
+          value: te-IN
+          descEn: Telugu (India)
+        - desc: Ti?ng Vi?t (Vi?t Nam)
+          code: vi-VN
+          value: vi-VN
+          descEn: Vietnamese (Vietnam)
+        - desc: Ελληνικ? (Ελλ?δα)
+          code: el-GR
+          value: el-GR
+          descEn: Greek (Greece)
+        - desc: Български (България)
+          code: bg-BG
+          value: bg-BG
+          descEn: Bulgarian (Bulgaria)
+        - desc: Српски (Срби?а)
+          code: sr-RS
+          value: sr-RS
+          descEn: Serbian (Serbia)
+        - desc: Укра?нська (Укра?на)
+          code: uk-UA
+          value: uk-UA
+          descEn: Ukrainian (Ukraine)
+        - desc: ????? (?????)
+          code: he-IL
+          value: he-IL
+          descEn: Hebrew (Israel)
+        - desc: ??????? (???????)
+          code: ar-IL
+          value: ar-IL
+          descEn: Arabic (Israel)
+        - desc: ??????? (??????)
+          code: ar-JO
+          value: ar-JO
+          descEn: Arabic (Jordan)
+        - desc: ??????? (????????)
+          code: ar-AE
+          value: ar-AE
+          descEn: Arabic (United Arab Emirates)
+        - desc: ??????? (???????)
+          code: ar-BH
+          value: ar-BH
+          descEn: Arabic (Bahrain)
+        - desc: ??????? (???????)
+          code: ar-DZ
+          value: ar-DZ
+          descEn: Arabic (Algeria)
+        - desc: ??????? (????????)
+          code: ar-SA
+          value: ar-SA
+          descEn: Arabic (Saudi Arabia)
+        - desc: ??????? (??????)
+          code: ar-IQ
+          value: ar-IQ
+          descEn: Arabic (Iraq)
+        - desc: ??????? (??????)
+          code: ar-KW
+          value: ar-KW
+          descEn: Arabic (Kuwait)
+        - desc: ??????? (??????)
+          code: ar-MA
+          value: ar-MA
+          descEn: Arabic (Morocco)
+        - desc: ??????? (????)
+          code: ar-TN
+          value: ar-TN
+          descEn: Arabic (Tunisia)
+        - desc: ??????? (?????)
+          code: ar-OM
+          value: ar-OM
+          descEn: Arabic (Oman)
+        - desc: ??????? (??????)
+          code: ar-PS
+          value: ar-PS
+          descEn: Arabic (State of Palestine)
+        - desc: ??????? (???)
+          code: ar-QA
+          value: ar-QA
+          descEn: Arabic (Qatar)
+        - desc: ??????? (?????)
+          code: ar-LB
+          value: ar-LB
+          descEn: Arabic (Lebanon)
+        - desc: ??????? (???)
+          code: ar-EG
+          value: ar-EG
+          descEn: Arabic (Egypt)
+        - desc: ????? (?????)
+          code: fa-IR
+          value: fa-IR
+          descEn: Persian (Iran)
+    - name: google
+      enable: true
+      order: 2
+      engineList:
+        - desc: 南非荷兰语（南非）
+          code: af-ZA
+          value: af-ZA
+        - desc: 阿尔巴尼亚语（阿尔巴尼亚）
+          code: sq-AL
+          value: sq-AL
+        - desc: 阿姆哈拉语（埃塞俄比亚）
+          code: am-ET
+          value: am-ET
+        - desc: 阿拉伯语（阿尔及利亚）
+          code: ar-DZ
+          value: ar-DZ
+        - desc: 阿拉伯语（巴林）
+          code: ar-BH
+          value: ar-BH
+        - desc: 阿拉伯语（埃及）
+          code: ar-EG
+          value: ar-EG
+        - desc: 阿拉伯语（伊拉克）
+          code: ar-IQ
+          value: ar-IQ
+        - desc: 阿拉伯语（以色列）
+          code: ar-IL
+          value: ar-IL
+        - desc: 阿拉伯语（约旦）
+          code: ar-JO
+          value: ar-JO
+        - desc: 阿拉伯语（科威特）
+          code: ar-KW
+          value: ar-KW
+        - desc: 阿拉伯语（黎巴嫩）
+          code: ar-LB
+          value: ar-LB
+        - desc: 阿拉伯语（毛里塔尼亚）
+          code: ar-MR
+          value: ar-MR
+        - desc: 阿拉伯语（摩洛哥）
+          code: ar-MA
+          value: ar-MA
+        - desc: 阿拉伯语（阿曼）
+          code: ar-OM
+          value: ar-OM
+        - desc: 阿拉伯语（卡塔尔）
+          code: ar-QA
+          value: ar-QA
+        - desc: 阿拉伯语（沙特阿拉伯）
+          code: ar-SA
+          value: ar-SA
+        - desc: 阿拉伯语（巴勒斯坦国）
+          code: ar-PS
+          value: ar-PS
+        - desc: 阿拉伯语（突尼斯）
+          code: ar-TN
+          value: ar-TN
+        - desc: 阿拉伯语（阿拉伯联合酋长国）
+          code: ar-AE
+          value: ar-AE
+        - desc: 阿拉伯语（也门）
+          code: ar-YE
+          value: ar-YE
+        - desc: 亚美尼亚语（亚美尼亚）
+          code: hy-AM
+          value: hy-AM
+        - desc: 阿塞拜疆语（阿塞拜疆）
+          code: az-AZ
+          value: az-AZ
+        - desc: 巴斯克语（西班牙）
+          code: eu-ES
+          value: eu-ES
+        - desc: 孟加拉语（孟加拉）
+          code: bn-BD
+          value: bn-BD
+        - desc: 孟加拉语（印度）
+          code: bn-IN
+          value: bn-IN
+        - desc: 波斯尼亚语（波斯尼亚和黑塞哥维那）
+          code: bs-BA
+          value: bs-BA
+        - desc: 保加利亚语（保加利亚）
+          code: bg-BG
+          value: bg-BG
+        - desc: 缅甸语（缅甸）
+          code: my-MM
+          value: my-MM
+        - desc: 加泰罗尼亚语（西班牙）
+          code: ca-ES
+          value: ca-ES
+        - desc: 中文粤语（香港繁体）
+          code: zh-HK
+          value: yue-Hant-HK
+        - desc: 中文普通话（中国简体）
+          code: zh-CN
+          value: cmn-Hans-CN
+        - desc: 中文普通话（台湾繁体）
+          code: zh-TW
+          value: cmn-Hant-TW
+        - desc: 克罗地亚语（克罗地亚）
+          code: hr-HR
+          value: hr-HR
+        - desc: 捷克语（捷克共和国）
+          code: cs-CZ
+          value: cs-CZ
+        - desc: 丹麦语（丹麦）
+          code: da-DK
+          value: da-DK
+        - desc: 荷兰语（比利时）
+          code: nl-BE
+          value: nl-BE
+        - desc: 荷兰语（荷兰）
+          code: nl-NL
+          value: nl-NL
+        - desc: 英语（澳大利亚）
+          code: en-AU
+          value: en-AU
+        - desc: 英语（加拿大）
+          code: en-CA
+          value: en-CA
+        - desc: 英语（加纳）
+          code: en-GH
+          value: en-GH
+        - desc: 英语（香港）
+          code: en-HK
+          value: en-HK
+        - desc: 英语（印度）
+          code: en-IN
+          value: en-IN
+        - desc: 英语（爱尔兰）
+          code: en-IE
+          value: en-IE
+        - desc: 英语（肯尼亚）
+          code: en-KE
+          value: en-KE
+        - desc: 英语（新西兰）
+          code: en-NZ
+          value: en-NZ
+        - desc: 英语（尼日利亚）
+          code: en-NG
+          value: en-NG
+        - desc: 英语（巴基斯坦）
+          code: en-PK
+          value: en-PK
+        - desc: 英语（菲律宾）
+          code: en-PH
+          value: en-PH
+        - desc: 英语（新加坡）
+          code: en-SG
+          value: en-SG
+        - desc: 英语（南非）
+          code: en-ZA
+          value: en-ZA
+        - desc: 英语（坦桑尼亚）
+          code: en-TZ
+          value: en-TZ
+        - desc: 英语（英国）
+          code: en-GB
+          value: en-GB
+        - desc: 英语（美国）
+          code: en-US
+          value: en-US
+        - desc: 爱沙尼亚语（爱沙尼亚）
+          code: et-EE
+          value: et-EE
+        - desc: 菲律宾语（菲律宾）
+          code: fil-PH
+          value: fil-PH
+        - desc: 芬兰语（芬兰）
+          code: fi-FI
+          value: fi-FI
+        - desc: 法语（比利时）
+          code: fr-BE
+          value: fr-BE
+        - desc: 法语（加拿大）
+          code: fr-CA
+          value: fr-CA
+        - desc: 法语（法国）
+          code: fr-FR
+          value: fr-FR
+        - desc: 法语（瑞士）
+          code: fr-CH
+          value: fr-CH
+        - desc: 加利西亚语（西班牙）
+          code: gl-ES
+          value: gl-ES
+        - desc: 格鲁吉亚语（格鲁吉亚）
+          code: ka-GE
+          value: ka-GE
+        - desc: 德语（奥地利）
+          code: de-AT
+          value: de-AT
+        - desc: 德语（瑞士）
+          code: de-CH
+          value: de-CH
+        - desc: 德语（德国）
+          code: de-DE
+          value: de-DE
+        - desc: 希腊语（希腊）
+          code: el-GR
+          value: el-GR
+        - desc: 古吉拉特语（印度）
+          code: gu-IN
+          value: gu-IN
+        - desc: 希伯来语（以色列）
+          code: he-IL
+          value: iw-IL
+        - desc: 印地语（印度）
+          code: hi-IN
+          value: hi-IN
+        - desc: 匈牙利语（匈牙利）
+          code: hu-HU
+          value: hu-HU
+        - desc: 冰岛语（冰岛）
+          code: is-IS
+          value: is-IS
+        - desc: 印度尼西亚语（印度尼西亚）
+          code: id-ID
+          value: id-ID
+        - desc: 意大利语（意大利）
+          code: it-IT
+          value: it-IT
+        - desc: 意大利语（瑞士）
+          code: it-CH
+          value: it-CH
+        - desc: 日语（日本）
+          code: ja-JP
+          value: ja-JP
+        - desc: 爪哇语（印度尼西亚）
+          code: jv-ID
+          value: jv-ID
+        - desc: 卡纳达语（印度）
+          code: kn-IN
+          value: kn-IN
+        - desc: 哈萨克语（哈萨克斯坦）
+          code: kk-KZ
+          value: kk-KZ
+        - desc: 高棉语（柬埔寨）
+          code: km-KH
+          value: km-KH
+        - desc: 韩语（韩国）
+          code: ko-KR
+          value: ko-KR
+        - desc: 老挝语（老挝）
+          code: lo-LA
+          value: lo-LA
+        - desc: 拉脱维亚语（拉脱维亚）
+          code: lv-LV
+          value: lv-LV
+        - desc: 立陶宛语（立陶宛）
+          code: lt-LT
+          value: lt-LT
+        - desc: 马其顿语（北马其顿）
+          code: mk-MK
+          value: mk-MK
+        - desc: 马来语（马来西亚）
+          code: ms-MY
+          value: ms-MY
+        - desc: 马拉雅拉姆语（印度）
+          code: ml-IN
+          value: ml-IN
+        - desc: 蒙古语（蒙古）
+          code: mn-MN
+          value: mn-MN
+        - desc: 尼泊尔语（尼泊尔）
+          code: ne-NP
+          value: ne-NP
+        - desc: 博克马尔挪威语（挪威）
+          code: no-NO
+          value: no-NO
+        - desc: 波斯语（伊朗）
+          code: fa-IR
+          value: fa-IR
+        - desc: 波兰语（波兰）
+          code: pl-PL
+          value: pl-PL
+        - desc: 葡萄牙语（巴西）
+          code: pt-BR
+          value: pt-BR
+        - desc: 葡萄牙语（葡萄牙）
+          code: pt-PT
+          value: pt-PT
+        - desc: 旁遮普语（果鲁穆奇语，印度）
+          code: pa-Guru-IN
+          value: pa-Guru-IN
+        - desc: 罗马尼亚语（罗马尼亚）
+          code: ro-RO
+          value: ro-RO
+        - desc: 俄语（俄罗斯）
+          code: ru-RU
+          value: ru-RU
+        - desc: 卢旺达语（卢旺达）
+          code: rw-RW
+          value: rw-RW
+        - desc: 塞尔维亚语（塞尔维亚）
+          code: sr-RS
+          value: sr-RS
+        - desc: 僧伽罗语（斯里兰卡）
+          code: si-LK
+          value: si-LK
+        - desc: 斯洛伐克语（斯洛伐克）
+          code: sk-SK
+          value: sk-SK
+        - desc: 斯洛文尼亚语（斯洛文尼亚）
+          code: sl-SI
+          value: sl-SI
+        - desc: 斯瓦蒂语（南非）
+          code: ss-latn-za
+          value: ss-latn-za
+        - desc: 南索托语（南非）
+          code: st-ZA
+          value: st-ZA
+        - desc: 西班牙语（阿根廷）
+          code: es-AR
+          value: es-AR
+        - desc: 西班牙语（玻利维亚）
+          code: es-BO
+          value: es-BO
+        - desc: 西班牙语（智利）
+          code: es-CL
+          value: es-CL
+        - desc: 西班牙语（哥伦比亚）
+          code: es-CO
+          value: es-CO
+        - desc: 西班牙语（哥斯达黎加）
+          code: es-CR
+          value: es-CR
+        - desc: 西班牙语（多米尼加共和国）
+          code: es-DO
+          value: es-DO
+        - desc: 西班牙语（厄瓜多尔）
+          code: es-EC
+          value: es-EC
+        - desc: 西班牙语（萨尔瓦多）
+          code: es-SV
+          value: es-SV
+        - desc: 西班牙语（危地马拉）
+          code: es-GT
+          value: es-GT
+        - desc: 西班牙语（洪都拉斯）
+          code: es-HN
+          value: es-HN
+        - desc: 西班牙语（墨西哥）
+          code: es-MX
+          value: es-MX
+        - desc: 西班牙语（尼加拉瓜）
+          code: es-NI
+          value: es-NI
+        - desc: 西班牙语（巴拿马）
+          code: es-PA
+          value: es-PA
+        - desc: 西班牙语（秘鲁）
+          code: es-PE
+          value: es-PE
+        - desc: 西班牙语（波多黎各）
+          code: es-PR
+          value: es-PR
+        - desc: 西班牙语（西班牙）
+          code: es-ES
+          value: es-ES
+        - desc: 西班牙语（美国）
+          code: es-US
+          value: es-US
+        - desc: 西班牙语（乌拉圭）
+          code: es-UY
+          value: es-UY
+        - desc: 西班牙语（委内瑞拉）
+          code: es-VE
+          value: es-VE
+        - desc: 巽他语（印度尼西亚）
+          code: su-ID
+          value: su-ID
+        - desc: 斯瓦希里语（肯尼亚）
+          code: sw-KE
+          value: sw-KE
+        - desc: 斯瓦希里语（坦桑尼亚）
+          code: sw-TZ
+          value: sw-TZ
+        - desc: 瑞典语（瑞典）
+          code: sv-SE
+          value: sv-SE
+        - desc: 泰米尔语（印度）
+          code: ta-IN
+          value: ta-IN
+        - desc: 泰米尔语（马来西亚）
+          code: ta-MY
+          value: ta-MY
+        - desc: 泰米尔语（新加坡）
+          code: ta-SG
+          value: ta-SG
+        - desc: 泰米尔语（斯里兰卡）
+          code: ta-LK
+          value: ta-LK
+        - desc: 泰卢固语（印度）
+          code: te-IN
+          value: te-IN
+        - desc: 泰语（泰国）
+          code: th-TH
+          value: th-TH
+        - desc: 茨瓦纳语（南非）
+          code: tn-latn-za
+          value: tn-latn-za
+        - desc: 土耳其语（土耳其）
+          code: tr-TR
+          value: tr-TR
+        - desc: 聪加语（南非）
+          code: ts-ZA
+          value: ts-ZA
+        - desc: 乌克兰语（乌克兰）
+          code: uk-UA
+          value: uk-UA
+        - desc: 乌尔都语（印度）
+          code: ur-IN
+          value: ur-IN
+        - desc: 乌尔都语（巴基斯坦）
+          code: ur-PK
+          value: ur-PK
+        - desc: 乌兹别克语（乌兹别克斯坦）
+          code: uz-UZ
+          value: uz-UZ
+        - desc: 文达语（南非）
+          code: ve-ZA
+          value: ve-ZA
+        - desc: 越南语（越南）
+          code: vi-VN
+          value: vi-VN
+        - desc: 索萨语（南非）
+          code: xh-ZA
+          value: xh-ZA
+translate:
+  policy:
+    - srcCode: en-US
+      dstCode: zh-CN
+      engine: custom
+      projects:
+        - lt_win
+        - lt_mac
+    - srcCode: zh-CN
+      dstCode: en-US
+      engine: google
+    - srcCode: ja-JP
+      dstCode: zh-CN
+      engine: niutrans
+    - srcCode: zh-CN
+      dstCode: ja-JP
+      engine: niutrans
+    - srcCode: en-US
+      dstCode: ja-JP
+      engine: google
+    - srcCode: ja-JP
+      dstCode: en-US
+      engine: google
+    - srcCode: en-GB
+      dstCode: ja-JP
+      engine: google
+    - srcCode: ja-JP
+      dstCode: en-GB
+      engine: google
+  engine:
+    - name: google
+      key: AIzaSyAzVTWGdfo16u9KLXIl0fObVefb0kPih_U
+      order: 1
+      enable: true
+      engineList:
+        - desc: 阿拉伯语(巴林)
+          code: ar-BH
+          value: ar
+        - desc: 阿拉伯语(阿尔及利亚)
+          code: ar-DZ
+          value: ar
+        - desc: 阿拉伯语(埃及)
+          code: ar-EG
+          value: ar
+        - desc: 阿拉伯语(以色列)
+          code: ar-IL
+          value: ar
+        - desc: 阿拉伯语(伊拉克)
+          code: ar-IQ
+          value: ar
+        - desc: 阿拉伯语(约旦)
+          code: ar-JO
+          value: ar
+        - desc: 阿拉伯语(科威特)
+          code: ar-KW
+          value: ar
+        - desc: 阿拉伯语(阿联酋)
+          code: ar-AE
+          value: ar
+        - desc: 阿拉伯语(黎巴嫩)
+          code: ar-LB
+          value: ar
+        - desc: 阿拉伯语(摩洛哥)
+          code: ar-MA
+          value: ar
+        - desc: 阿拉伯语(阿曼)
+          code: ar-OM
+          value: ar
+        - desc: 阿拉伯语(巴勒斯坦)
+          code: ar-PS
+          value: ar
+        - desc: 阿拉伯语(卡塔尔)
+          code: ar-QA
+          value: ar
+        - desc: 阿拉伯语(沙特阿拉伯)
+          code: ar-SA
+          value: ar
+        - desc: 阿拉伯语(突尼斯)
+          code: ar-TN
+          value: ar
+        - desc: 保加利亚语
+          code: bg-BG
+          value: bg
+        - desc: 加泰罗尼亚语
+          code: ca-ES
+          value: ca
+        - desc: 中文（简体）
+          code: zh-CN
+          value: zh-CN
+        - desc: 中文（繁体）
+          code: zh-TW
+          value: zh-TW
+        - desc: 中文（香港）
+          code: zh-HK
+          value: zh-HK
+        - desc: 克罗地亚语
+          code: hr-HR
+          value: hr
+        - desc: 捷克语
+          code: cs-CZ
+          value: cs
+        - desc: 丹麦语
+          code: da-DK
+          value: da
+        - desc: 荷兰语
+          code: nl-NL
+          value: nl
+        - desc: 英语(澳大利亚)
+          code: en-AU
+          value: en
+        - desc: 英语(加拿大)
+          code: en-CA
+          value: en
+        - desc: 英语(英国)
+          code: en-GB
+          value: en
+        - desc: 英语(加纳)
+          code: en-GH
+          value: en
+        - desc: 英语(爱尔兰)
+          code: en-IE
+          value: en
+        - desc: 英语(印度)
+          code: en-IN
+          value: en
+        - desc: 英语(美国)
+          code: en-US
+          value: en
+        - desc: 英语(肯尼亚)
+          code: en-KE
+          value: en
+        - desc: 英语(尼日利亚)
+          code: en-NG
+          value: en
+        - desc: 英语(菲律宾)
+          code: en-PH
+          value: en
+        - desc: 英语(坦桑尼亚)
+          code: en-TZ
+          value: en
+        - desc: 英语(南非)
+          code: en-ZA
+          value: en
+        - desc: 英语(新西兰)
+          code: en-NZ
+          value: en
+        - desc: 英语(新加坡)
+          code: en-SG
+          value: en
+        - desc: 菲律宾语（塔加拉语）
+          code: fil-PH
+          value: fil
+        - desc: 芬兰语
+          code: fi-FI
+          value: fi
+        - desc: 法语(法国)
+          code: fr-FR
+          value: fr
+        - desc: 法语(加拿大)
+          code: fr-CA
+          value: fr
+        - desc: 德语
+          code: de-DE
+          value: de
+        - desc: 希腊文
+          code: el-GR
+          value: el
+        - desc: 希伯来语
+          code: he-IL
+          value: he
+        - desc: 印地语
+          code: hi-IN
+          value: hi
+        - desc: 匈牙利语
+          code: hu-HU
+          value: hu
+        - desc: 冰岛语
+          code: is-IS
+          value: is
+        - desc: 印度尼西亚语
+          code: id-ID
+          value: id
+        - desc: 意大利语
+          code: it-IT
+          value: it
+        - desc: 日语
+          code: ja-JP
+          value: ja
+        - desc: 韩语
+          code: ko-KR
+          value: ko
+        - desc: 马来语
+          code: ms-MY
+          value: ms
+        - desc: 挪威语
+          code: nb-NO
+          value: 'no'
+        - desc: 波兰语
+          code: pl-PL
+          value: pl
+        - desc: 葡萄牙语（巴西）
+          code: pt-BR
+          value: pt
+        - desc: 葡萄牙语（葡萄牙）
+          code: pt-PT
+          value: pt
+        - desc: 罗马尼亚语
+          code: ro-RO
+          value: ro
+        - desc: 俄语
+          code: ru-RU
+          value: ru
+        - desc: 斯洛伐克语
+          code: sk-SK
+          value: sk
+        - desc: 斯洛文尼亚语
+          code: sl-SI
+          value: sl
+        - desc: 西班牙语(西班牙)
+          code: es-ES
+          value: es
+        - desc: 西班牙语(美国)
+          code: es-US
+          value: es
+        - desc: 西班牙语(阿根廷)
+          code: es-AR
+          value: es
+        - desc: 西班牙语(玻利维亚)
+          code: es-BO
+          value: es
+        - desc: 西班牙语(智利)
+          code: es-CL
+          value: es
+        - desc: 西班牙语(哥伦比亚)
+          code: es-CO
+          value: es
+        - desc: 西班牙语(哥斯达黎加)
+          code: es-CR
+          value: es
+        - desc: 西班牙语(多米尼克)
+          code: es-DO
+          value: es
+        - desc: 西班牙语(厄瓜多尔)
+          code: es-EC
+          value: es
+        - desc: 西班牙语(危地马拉)
+          code: es-GT
+          value: es
+        - desc: 西班牙语(洪都拉斯)
+          code: es-HN
+          value: es
+        - desc: 西班牙语(墨西哥)
+          code: es-MX
+          value: es
+        - desc: 西班牙语(尼加拉瓜)
+          code: es-NI
+          value: es
+        - desc: 西班牙语(巴拿马)
+          code: es-PA
+          value: es
+        - desc: 西班牙语(秘鲁)
+          code: es-PE
+          value: es
+        - desc: 西班牙语(波多黎各)
+          code: es-PR
+          value: es
+        - desc: 西班牙语(巴拉圭)
+          code: es-PY
+          value: es
+        - desc: 西班牙语(萨尔瓦多)
+          code: es-SV
+          value: es
+        - desc: 西班牙语(委内瑞拉)
+          code: es-VE
+          value: es
+        - desc: 西班牙语(乌拉圭)
+          code: es-UY
+          value: es
+        - desc: 瑞典语
+          code: sv-SE
+          value: sv
+        - desc: 泰米尔语(印度)
+          code: ta-IN
+          value: ta
+        - desc: 泰米尔语(新加坡)
+          code: ta-SG
+          value: ta
+        - desc: 泰米尔语(斯里兰卡)
+          code: ta-LK
+          value: ta
+        - desc: 泰米尔语(马来西亚)
+          code: ta-MY
+          value: ta
+        - desc: 泰卢固语
+          code: te-IN
+          value: te
+        - desc: 泰语
+          code: th-TH
+          value: th
+        - desc: 土耳其语
+          code: tr-TR
+          value: tr
+        - desc: 乌克兰语
+          code: uk-UA
+          value: uk
+        - desc: 乌尔都语(巴基斯坦)
+          code: ur-PK
+          value: ur
+        - desc: 乌尔都语(印度)
+          code: ur-IN
+          value: ur
+        - desc: 越南语
+          code: vi-VN
+          value: vi
+    - name: microsoft
+      key: 8dc7c9a747b6475c8982f19e59c25c31
+      order: 2
+      enable: true
+      engineList:
+        - desc: 阿拉伯语(巴林)
+          code: ar-BH
+          value: ar
+        - desc: 阿拉伯语(阿尔及利亚)
+          code: ar-DZ
+          value: ar
+        - desc: 阿拉伯语(埃及)
+          code: ar-EG
+          value: ar
+        - desc: 阿拉伯语(以色列)
+          code: ar-IL
+          value: ar
+        - desc: 阿拉伯语(伊拉克)
+          code: ar-IQ
+          value: ar
+        - desc: 阿拉伯语(约旦)
+          code: ar-JO
+          value: ar
+        - desc: 阿拉伯语(科威特)
+          code: ar-KW
+          value: ar
+        - desc: 阿拉伯语(阿联酋)
+          code: ar-AE
+          value: ar
+        - desc: 阿拉伯语(黎巴嫩)
+          code: ar-LB
+          value: ar
+        - desc: 阿拉伯语(摩洛哥)
+          code: ar-MA
+          value: ar
+        - desc: 阿拉伯语(阿曼)
+          code: ar-OM
+          value: ar
+        - desc: 阿拉伯语(巴勒斯坦)
+          code: ar-PS
+          value: ar
+        - desc: 阿拉伯语(卡塔尔)
+          code: ar-QA
+          value: ar
+        - desc: 阿拉伯语(沙特阿拉伯)
+          code: ar-SA
+          value: ar
+        - desc: 阿拉伯语(突尼斯)
+          code: ar-TN
+          value: ar
+        - desc: 保加利亚语
+          code: bg-BG
+          value: bg
+        - desc: 加泰罗尼亚语
+          code: ca-ES
+          value: ca
+        - desc: 中文（简体）
+          code: zh-CN
+          value: zh-Hans
+        - desc: 中文（繁体）
+          code: zh-TW
+          value: yue
+        - desc: 中文（香港）
+          code: zh-HK
+          value: yue
+        - desc: 克罗地亚语
+          code: hr-HR
+          value: hr
+        - desc: 捷克语
+          code: cs-CZ
+          value: cs
+        - desc: 丹麦语
+          code: da-DK
+          value: da
+        - desc: 荷兰语
+          code: nl-NL
+          value: nl
+        - desc: 英语(澳大利亚)
+          code: en-AU
+          value: en
+        - desc: 英语(加拿大)
+          code: en-CA
+          value: en
+        - desc: 英语(英国)
+          code: en-GB
+          value: en
+        - desc: 英语(加纳)
+          code: en-GH
+          value: en
+        - desc: 英语(爱尔兰)
+          code: en-IE
+          value: en
+        - desc: 英语(印度)
+          code: en-IN
+          value: en
+        - desc: 英语(美国)
+          code: en-US
+          value: en
+        - desc: 英语(肯尼亚)
+          code: en-KE
+          value: en
+        - desc: 英语(尼日利亚)
+          code: en-NG
+          value: en
+        - desc: 英语(菲律宾)
+          code: en-PH
+          value: en
+        - desc: 英语(坦桑尼亚)
+          code: en-TZ
+          value: en
+        - desc: 英语(南非)
+          code: en-ZA
+          value: en
+        - desc: 英语(新西兰)
+          code: en-NZ
+          value: en
+        - desc: 英语(新加坡)
+          code: en-SG
+          value: en
+        - desc: 菲律宾语（塔加拉语）
+          code: fil-PH
+          value: fil
+        - desc: 芬兰语
+          code: fi-FI
+          value: fi
+        - desc: 法语(法国)
+          code: fr-FR
+          value: fr
+        - desc: 法语(加拿大)
+          code: fr-CA
+          value: fr
+        - desc: 德语
+          code: de-DE
+          value: de
+        - desc: 希腊文
+          code: el-GR
+          value: el
+        - desc: 希伯来语
+          code: he-IL
+          value: he
+        - desc: 印地语
+          code: hi-IN
+          value: hi
+        - desc: 匈牙利语
+          code: hu-HU
+          value: hu
+        - desc: 冰岛语
+          code: is-IS
+          value: is
+        - desc: 印度尼西亚语
+          code: id-ID
+          value: id
+        - desc: 意大利语
+          code: it-IT
+          value: it
+        - desc: 日语
+          code: ja-JP
+          value: ja
+        - desc: 韩语
+          code: ko-KR
+          value: ko
+        - desc: 马来语
+          code: ms-MY
+          value: ms
+        - desc: 挪威语
+          code: nb-NO
+          value: nb
+        - desc: 葡萄牙语（巴西）
+          code: pt-BR
+          value: pt
+        - desc: 葡萄牙语（葡萄牙）
+          code: pt-PT
+          value: pt-pt
+        - desc: 罗马尼亚语
+          code: ro-RO
+          value: ro
+        - desc: 俄语
+          code: ru-RU
+          value: ru
+        - desc: 斯洛伐克语
+          code: sk-SK
+          value: sk
+        - desc: 斯洛文尼亚语
+          code: sl-SI
+          value: sl
+        - desc: 西班牙语(西班牙)
+          code: es-ES
+          value: es
+        - desc: 西班牙语(美国)
+          code: es-US
+          value: es
+        - desc: 西班牙语(阿根廷)
+          code: es-AR
+          value: es
+        - desc: 西班牙语(玻利维亚)
+          code: es-BO
+          value: es
+        - desc: 西班牙语(智利)
+          code: es-CL
+          value: es
+        - desc: 西班牙语(哥伦比亚)
+          code: es-CO
+          value: es
+        - desc: 西班牙语(哥斯达黎加)
+          code: es-CR
+          value: es
+        - desc: 西班牙语(多米尼克)
+          code: es-DO
+          value: es
+        - desc: 西班牙语(厄瓜多尔)
+          code: es-EC
+          value: es
+        - desc: 西班牙语(危地马拉)
+          code: es-GT
+          value: es
+        - desc: 西班牙语(洪都拉斯)
+          code: es-HN
+          value: es
+        - desc: 西班牙语(墨西哥)
+          code: es-MX
+          value: es
+        - desc: 西班牙语(尼加拉瓜)
+          code: es-NI
+          value: es
+        - desc: 西班牙语(巴拿马)
+          code: es-PA
+          value: es
+        - desc: 西班牙语(秘鲁)
+          code: es-PE
+          value: es
+        - desc: 西班牙语(波多黎各)
+          code: es-PR
+          value: es
+        - desc: 西班牙语(巴拉圭)
+          code: es-PY
+          value: es
+        - desc: 西班牙语(萨尔瓦多)
+          code: es-SV
+          value: es
+        - desc: 西班牙语(委内瑞拉)
+          code: es-VE
+          value: es
+        - desc: 西班牙语(乌拉圭)
+          code: es-UY
+          value: es
+        - desc: 瑞典语
+          code: sv-SE
+          value: sv
+        - desc: 泰米尔语(印度)
+          code: ta-IN
+          value: ta
+        - desc: 泰米尔语(新加坡)
+          code: ta-SG
+          value: ta
+        - desc: 泰米尔语(斯里兰卡)
+          code: ta-LK
+          value: ta
+        - desc: 泰米尔语(马来西亚)
+          code: ta-MY
+          value: ta
+        - desc: 泰卢固语
+          code: te-IN
+          value: te
+        - desc: 泰语
+          code: th-TH
+          value: th
+        - desc: 土耳其语
+          code: tr-TR
+          value: tr
+        - desc: 乌克兰语
+          code: uk-UA
+          value: uk
+        - desc: 乌尔都语(巴基斯坦)
+          code: ur-PK
+          value: ur
+        - desc: 乌尔都语(印度)
+          code: ur-IN
+          value: ur
+        - desc: 越南语
+          code: vi-VN
+          value: vi
+    - name: niutrans
+      key: f63f09ca7d27eeb67a0278dec279d33a
+      order: 3
+      enable: true
+      engineList:
+        - code: ar-EG
+          value: ar
+        - code: ar-SA
+          value: ar
+        - code: bg-BG
+          value: bg
+        - code: ca-ES
+          value: ca
+        - code: cs-CZ
+          value: cs
+        - code: da-DK
+          value: da
+        - code: de-AT
+          value: de
+        - code: de-CH
+          value: de
+        - code: de-DE
+          value: de
+        - code: el-GR
+          value: el
+        - code: en-AU
+          value: en
+        - code: en-CA
+          value: en
+        - code: en-GB
+          value: en
+        - code: en-IE
+          value: en
+        - code: en-IN
+          value: en
+        - code: en-US
+          value: en
+        - code: es-ES
+          value: es
+        - code: es-MX
+          value: es
+        - code: fi-FI
+          value: fi
+        - code: fr-CA
+          value: fr
+        - code: fr-CH
+          value: fr
+        - code: fr-FR
+          value: fr
+        - code: he-IL
+          value: he
+        - code: hi-IN
+          value: hi
+        - code: hr-HR
+          value: hr
+        - code: hu-HU
+          value: hu
+        - code: id-ID
+          value: id
+        - code: it-IT
+          value: it
+        - code: ja-JP
+          value: ja
+        - code: ko-KR
+          value: ko
+        - code: ms-MY
+          value: ms
+        - code: nb-NO
+          value: 'no'
+        - code: nl-NL
+          value: nl
+        - code: pl-PL
+          value: pl
+        - code: pt-BR
+          value: pt
+        - code: pt-PT
+          value: pt
+        - code: ro-RO
+          value: ro
+        - code: ru-RU
+          value: ru
+        - code: sk-SK
+          value: sk
+        - code: sl-SI
+          value: sl
+        - code: sv-SE
+          value: sv
+        - code: ta-IN
+          value: ta
+        - code: te-IN
+          value: te
+        - code: th-TH
+          value: th
+        - code: tr-TR
+          value: tr
+        - code: vi-VN
+          value: vi
+        - code: zh-CN
+          value: zh
+        - code: zh-TW
+          value: cht
+    - name: custom
+      enable: true
+      key: 订阅值
+      region: 区域
+      order: 4
+      projects:
+        - lt_win
+        - lt_mac
+      engineList:
+        - code: en-US
+          value: en-US
+          desc: 英文
+        - code: zh-CN
+          value: zh-CN
+          desc: 中文
+synthesize:
+  engine:
+    - name: google
+      key: AIzaSyAzVTWGdfo16u9KLXIl0fObVefb0kPih_U
+      order: 1
+      enable: true
+      engineList:
+        - desc: 南非荷兰语（南非）
+          code: af-ZA
+          value: af-ZA
+          gender: FEMALE
+        - desc: 阿拉伯语(阿联酋)
+          code: ar-AE
+          value: ar-XA
+          gender: FEMALE
+        - desc: 阿拉伯语(巴林)
+          code: ar-BH
+          value: ar-XA
+          gender: FEMALE
+        - desc: 阿拉伯语(阿尔及利亚)
+          code: ar-DZ
+          value: ar-XA
+          gender: FEMALE
+        - desc: 阿拉伯语(埃及)
+          code: ar-EG
+          value: ar-XA
+          gender: FEMALE
+        - desc: 阿拉伯语(以色列)
+          code: ar-IL
+          value: ar-XA
+          gender: FEMALE
+        - desc: 阿拉伯语(伊拉克)
+          code: ar-IQ
+          value: ar-XA
+          gender: FEMALE
+        - desc: 阿拉伯语(约旦)
+          code: ar-JO
+          value: ar-XA
+          gender: FEMALE
+        - desc: 阿拉伯语(科威特)
+          code: ar-KW
+          value: ar-XA
+          gender: FEMALE
+        - desc: 阿拉伯语(黎巴嫩)
+          code: ar-LB
+          value: ar-XA
+          gender: FEMALE
+        - desc: 阿拉伯语(摩洛哥)
+          code: ar-MA
+          value: ar-XA
+          gender: FEMALE
+        - desc: 阿拉伯语(阿曼)
+          code: ar-OM
+          value: ar-XA
+          gender: FEMALE
+        - desc: 阿拉伯语(巴勒斯坦)
+          code: ar-PS
+          value: ar-XA
+          gender: FEMALE
+        - desc: 阿拉伯语(卡塔尔)
+          code: ar-QA
+          value: ar-XA
+          gender: FEMALE
+        - desc: 阿拉伯语(沙特阿拉伯)
+          code: ar-SA
+          value: ar-XA
+          gender: FEMALE
+        - desc: 阿拉伯语(突尼斯)
+          code: ar-TN
+          value: ar-XA
+          gender: FEMALE
+        - desc: 巴斯克语（西班牙）
+          code: eu-ES
+          value: eu-ES
+          gender: FEMALE
+        - desc: 孟加拉语（印度）
+          code: bn-IN
+          value: bn-IN
+          gender: FEMALE
+        - desc: 保加利亚语（保加利亚）
+          code: bg-BG
+          value: bg-BG
+          gender: FEMALE
+        - desc: 加泰罗尼亚语（西班牙）
+          code: ca-ES
+          value: ca-ES
+          gender: FEMALE
+        - desc: 中文 (香港)
+          code: zh-HK
+          value: yue-HK
+          gender: FEMALE
+        - desc: 捷克语（捷克共和国）
+          code: cs-CZ
+          value: cs-CZ
+          gender: FEMALE
+        - desc: 丹麦语（丹麦）
+          code: da-DK
+          value: da-DK
+          gender: FEMALE
+        - desc: 荷兰语（比利时）
+          code: nl-BE
+          value: nl-BE
+          gender: FEMALE
+        - desc: 荷兰语（荷兰）
+          code: nl-NL
+          value: nl-NL
+          gender: FEMALE
+        - desc: 英语（澳大利亚）
+          code: en-AU
+          value: en-AU
+          gender: FEMALE
+        - desc: 英语（印度）
+          code: en-IN
+          value: en-IN
+          gender: FEMALE
+        - desc: 英语（英国）
+          code: en-GB
+          value: en-GB
+          gender: FEMALE
+        - desc: 英语(美国)
+          code: en-US
+          value: en-US
+          gender: FEMALE
+        - desc: 英语(加拿大)
+          code: en-CA
+          value: en-US
+          gender: FEMALE
+        - desc: 英语(加纳)
+          code: en-GH
+          value: en-US
+          gender: FEMALE
+        - desc: 英语(爱尔兰)
+          code: en-IE
+          value: en-US
+          gender: FEMALE
+        - desc: 英语(肯尼亚)
+          code: en-KE
+          value: en-US
+          gender: FEMALE
+        - desc: 英语(尼日利亚)
+          code: en-NG
+          value: en-US
+          gender: FEMALE
+        - desc: 英语(坦桑尼亚)
+          code: en-TZ
+          value: en-US
+          gender: FEMALE
+        - desc: 英语(菲律宾)
+          code: en-PH
+          value: en-US
+          gender: FEMALE
+        - desc: 英语(南非)
+          code: en-ZA
+          value: en-US
+          gender: FEMALE
+        - desc: 英语(新西兰)
+          code: en-NZ
+          value: en-US
+          gender: FEMALE
+        - desc: 英语(新加坡)
+          code: en-SG
+          value: en-US
+          gender: FEMALE
+        - desc: 菲律宾语（菲律宾）
+          code: fil-PH
+          value: fil-PH
+          gender: FEMALE
+        - desc: 芬兰语（芬兰）
+          code: fi-FI
+          value: fi-FI
+          gender: FEMALE
+        - desc: 法语（加拿大）
+          code: fr-CA
+          value: fr-CA
+          gender: FEMALE
+        - desc: 法语（法国）
+          code: fr-FR
+          value: fr-FR
+          gender: FEMALE
+        - desc: 加利西亚语（西班牙）
+          code: gl-ES
+          value: gl-ES
+          gender: FEMALE
+        - desc: 德语（德国）
+          code: de-DE
+          value: de-DE
+          gender: FEMALE
+        - desc: 希腊语（希腊）
+          code: el-GR
+          value: el-GR
+          gender: FEMALE
+        - desc: 古吉拉特语（印度）
+          code: gu-IN
+          value: gu-IN
+          gender: FEMALE
+        - desc: 希伯来语（以色列）
+          code: he-IL
+          value: he-IL
+          gender: FEMALE
+        - desc: 印地语（印度）
+          code: hi-IN
+          value: hi-IN
+          gender: FEMALE
+        - desc: 匈牙利语（匈牙利）
+          code: hu-HU
+          value: hu-HU
+          gender: FEMALE
+        - desc: 冰岛语（冰岛）
+          code: is-IS
+          value: is-IS
+          gender: FEMALE
+        - desc: 印度尼西亚语（印度尼西亚）
+          code: id-ID
+          value: id-ID
+          gender: FEMALE
+        - desc: 意大利语（意大利）
+          code: it-IT
+          value: it-IT
+          gender: FEMALE
+        - desc: 日语（日本）
+          code: ja-JP
+          value: ja-JP
+          gender: FEMALE
+        - desc: 卡纳达语（印度）
+          code: kn-IN
+          value: kn-IN
+          gender: FEMALE
+        - desc: 韩语（韩国）
+          code: ko-KR
+          value: ko-KR
+          gender: FEMALE
+          voiceName: ko-KR-Neural2-A
+        - desc: 拉脱维亚语（拉脱维亚）
+          code: lv-LV
+          value: lv-LV
+          gender: FEMALE
+        - desc: 立陶宛语（立陶宛）
+          code: lt-LT
+          value: lt-LT
+          gender: FEMALE
+        - desc: 马来语（马来西亚）
+          code: ms-MY
+          value: ms-MY
+          gender: FEMALE
+        - desc: 马拉雅拉姆语（印度）
+          code: ml-IN
+          value: ml-IN
+          gender: FEMALE
+        - desc: 中文普通话
+          code: zh-CN
+          value: cmn-CN
+          gender: FEMALE
+        - desc: 中文普通话(台湾)
+          code: zh-TW
+          value: cmn-TW
+          gender: FEMALE
+        - desc: 马拉地语（印度）
+          code: mr-IN
+          value: mr-IN
+          gender: FEMALE
+        - desc: 挪威语（挪威）
+          code: nb-NO
+          value: nb-NO
+          gender: FEMALE
+        - desc: 波兰语（波兰）
+          code: pl-PL
+          value: pl-PL
+          gender: FEMALE
+        - desc: 葡萄牙语（巴西）
+          code: pt-BR
+          value: pt-BR
+          gender: FEMALE
+        - desc: 葡萄牙语（葡萄牙）
+          code: pt-PT
+          value: pt-PT
+          gender: FEMALE
+        - desc: 旁遮普语（印度）
+          code: pa-IN
+          value: pa-IN
+          gender: FEMALE
+        - desc: 罗马尼亚语（罗马尼亚）
+          code: ro-RO
+          value: ro-RO
+          gender: FEMALE
+        - desc: 俄语（俄罗斯）
+          code: ru-RU
+          value: ru-RU
+          gender: FEMALE
+        - desc: 塞尔维亚语（西里尔字母）
+          code: sr-RS
+          value: sr-RS
+          gender: FEMALE
+        - desc: 斯洛伐克语（斯洛伐克）
+          code: sk-SK
+          value: sk-SK
+          gender: FEMALE
+        - desc: 西班牙语（西班牙）
+          code: es-ES
+          value: es-ES
+          gender: Neural2
+          voiceName: es-ES-Neural2-A
+        - desc: 西班牙语（美国）
+          code: es-US
+          value: es-US
+          gender: FEMALE
+        - desc: 西班牙语（阿根廷）
+          code: es-AR
+          value: es-US
+          gender: FEMALE
+        - desc: 西班牙语（玻利维亚）
+          code: es-BO
+          value: es-US
+          gender: FEMALE
+        - desc: 西班牙语（智利）
+          code: es-CL
+          value: es-US
+          gender: FEMALE
+        - desc: 西班牙语（哥伦比亚）
+          code: es-CO
+          value: es-US
+          gender: FEMALE
+        - desc: 西班牙语（哥斯达黎加）
+          code: es-CR
+          value: es-US
+          gender: FEMALE
+        - desc: 西班牙语（多米尼克）
+          code: es-DO
+          value: es-US
+          gender: FEMALE
+        - desc: 西班牙语（厄瓜多尔）
+          code: es-EC
+          value: es-US
+          gender: FEMALE
+        - desc: 西班牙语（危地马拉）
+          code: es-GT
+          value: es-US
+          gender: FEMALE
+        - desc: 西班牙语（洪都拉斯）
+          code: es-HN
+          value: es-US
+          gender: FEMALE
+        - desc: 西班牙语（墨西哥）
+          code: es-MX
+          value: es-US
+          gender: FEMALE
+        - desc: 西班牙语（尼加拉瓜）
+          code: es-NI
+          value: es-US
+          gender: FEMALE
+        - desc: 西班牙语（巴拿马）
+          code: es-PA
+          value: es-US
+          gender: FEMALE
+        - desc: 西班牙语（秘鲁）
+          code: es-PE
+          value: es-US
+          gender: FEMALE
+        - desc: 西班牙语（波多黎各）
+          code: es-PR
+          value: es-US
+          gender: FEMALE
+        - desc: 西班牙语（巴拉圭）
+          code: es-PY
+          value: es-US
+          gender: FEMALE
+        - desc: 西班牙语（萨尔瓦多）
+          code: es-SV
+          value: es-US
+          gender: FEMALE
+        - desc: 西班牙语（委内瑞拉）
+          code: es-VE
+          value: es-US
+          gender: FEMALE
+        - desc: 西班牙语（乌拉圭）
+          code: es-UY
+          value: es-US
+          gender: FEMALE
+        - desc: 瑞典语（瑞典）
+          code: sv-SE
+          value: sv-SE
+          gender: FEMALE
+        - desc: 泰米尔语（印度）
+          code: ta-IN
+          value: ta-IN
+          gender: FEMALE
+        - desc: 泰米尔语（新加坡）
+          code: ta-SG
+          value: ta-IN
+          gender: FEMALE
+        - desc: 泰米尔语（斯里兰卡）
+          code: ta-LK
+          value: ta-IN
+          gender: FEMALE
+        - desc: 泰米尔语（马来西亚）
+          code: ta-MY
+          value: ta-IN
+          gender: FEMALE
+        - desc: 泰卢固语（印度）
+          code: te-IN
+          value: te-IN
+          gender: FEMALE
+        - desc: 泰语（泰国）
+          code: th-TH
+          value: th-TH
+          gender: FEMALE
+        - desc: 土耳其语（土耳其）
+          code: tr-TR
+          value: tr-TR
+          gender: FEMALE
+        - desc: 乌克兰语（乌克兰）
+          code: uk-UA
+          value: uk-UA
+          gender: FEMALE
+        - desc: 越南语（越南）
+          code: vi-VN
+          value: vi-VN
+          gender: FEMALE
+    - name: microsoft
+      key: 订阅值
+      order: 2
+      region: 区域
+      enable: true
+      engineList:
+        - code: ar-EG
+          value: ar-EG
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ar-EG, Hoda)'
+          gender: FEMALE
+        - code: ar-SA
+          value: ar-EG
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ar-EG, Hoda)'
+          gender: FEMALE
+        - code: ar-AE
+          value: ar-EG
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ar-EG, Hoda)'
+          gender: FEMALE
+        - code: ar-BH
+          value: ar-EG
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ar-EG, Hoda)'
+          gender: FEMALE
+        - code: ar-DZ
+          value: ar-EG
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ar-EG, Hoda)'
+          gender: FEMALE
+        - code: ar-IL
+          value: ar-EG
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ar-EG, Hoda)'
+          gender: FEMALE
+        - code: ar-IQ
+          value: ar-EG
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ar-EG, Hoda)'
+          gender: FEMALE
+        - code: ar-JO
+          value: ar-EG
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ar-EG, Hoda)'
+          gender: FEMALE
+        - code: ar-KW
+          value: ar-EG
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ar-EG, Hoda)'
+          gender: FEMALE
+        - code: ar-LB
+          value: ar-EG
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ar-EG, Hoda)'
+          gender: FEMALE
+        - code: ar-MA
+          value: ar-EG
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ar-EG, Hoda)'
+          gender: FEMALE
+        - code: ar-OM
+          value: ar-EG
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ar-EG, Hoda)'
+          gender: FEMALE
+        - code: ar-PS
+          value: ar-EG
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ar-EG, Hoda)'
+          gender: FEMALE
+        - code: ar-QA
+          value: ar-EG
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ar-EG, Hoda)'
+          gender: FEMALE
+        - code: ar-TN
+          value: ar-EG
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ar-EG, Hoda)'
+          gender: FEMALE
+        - code: ar-EG
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ar-EG, Hoda)'
+          gender: MALE
+        - code: ar-SA
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ar-SA, Naayf)'
+          gender: FEMALE
+        - code: ar-SA
+          value: ar-SA
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ar-SA, Naayf)'
+          gender: MALE
+        - code: bg-BG
+          value: bg-BG
+          descEn: 'Microsoft Server Speech Text to Speech Voice (bg-BG, Ivan)'
+          gender: MALE
+        - code: ca-ES
+          value: ca-ES
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ca-ES, HerenaRUS)'
+          gender: FEMALE
+        - code: ca-ES
+          value: ca-ES
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ca-ES, HerenaRUS)'
+          gender: MALE
+        - code: cs-CZ
+          value: cs-CZ
+          descEn: 'Microsoft Server Speech Text to Speech Voice (cs-CZ, Vit)'
+          gender: FEMALE
+        - code: cs-CZ
+          value: cs-CZ
+          descEn: 'Microsoft Server Speech Text to Speech Voice (cs-CZ, Vit)'
+          gender: MALE
+        - code: da-DK
+          value: da-DK
+          descEn: 'Microsoft Server Speech Text to Speech Voice (da-DK, HelleRUS)'
+          gender: FEMALE
+        - code: da-DK
+          value: da-DK
+          descEn: 'Microsoft Server Speech Text to Speech Voice (da-DK, HelleRUS)'
+          gender: MALE
+        - code: de-AT
+          value: de-AT
+          descEn: 'Microsoft Server Speech Text to Speech Voice (de-AT, Michael)'
+          gender: FEMALE
+        - code: de-AT
+          value: de-AT
+          descEn: 'Microsoft Server Speech Text to Speech Voice (de-AT, Michael)'
+          gender: MALE
+        - code: de-CH
+          value: de-CH
+          descEn: 'Microsoft Server Speech Text to Speech Voice (de-CH, Karsten)'
+          gender: FEMALE
+        - code: de-CH
+          value: de-CH
+          descEn: 'Microsoft Server Speech Text to Speech Voice (de-CH, Karsten)'
+          gender: MALE
+        - code: de-DE
+          value: de-DE
+          descEn: 'Microsoft Server Speech Text to Speech Voice (de-DE, HeddaRUS)'
+          gender: FEMALE
+        - code: de-DE
+          value: de-DE
+          descEn: 'Microsoft Server Speech Text to Speech Voice (de-DE, Stefan, Apollo)'
+          gender: MALE
+        - code: el-GR
+          value: el-GR
+          descEn: 'Microsoft Server Speech Text to Speech Voice (el-GR, Stefanos)'
+          gender: FEMALE
+        - code: el-GR
+          value: el-GR
+          descEn: 'Microsoft Server Speech Text to Speech Voice (el-GR, Stefanos)'
+          gender: MALE
+        - code: en-AU
+          value: en-AU
+          descEn: 'Microsoft Server Speech Text to Speech Voice (en-AU, Catherine)'
+          gender: FEMALE
+        - code: en-AU
+          value: en-AU
+          descEn: 'Microsoft Server Speech Text to Speech Voice (en-AU, Catherine)'
+          gender: MALE
+        - code: en-AU
+          value: en-AU
+          descEn: 'Microsoft Server Speech Text to Speech Voice (en-AU, HayleyRUS)'
+          gender: FEMALE
+        - code: en-AU
+          value: en-AU
+          descEn: 'Microsoft Server Speech Text to Speech Voice (en-AU, HayleyRUS)'
+          gender: MALE
+        - code: en-CA
+          value: en-CA
+          descEn: 'Microsoft Server Speech Text to Speech Voice (en-CA, Linda)'
+          gender: FEMALE
+        - code: en-CA
+          value: en-CA
+          descEn: 'Microsoft Server Speech Text to Speech Voice (en-CA, Linda)'
+          gender: MALE
+        - code: en-GB
+          value: en-GB
+          descEn: 'Microsoft Server Speech Text to Speech Voice (en-GB, HazelRUS)'
+          gender: FEMALE
+        - code: en-GB
+          value: en-GB
+          descEn: 'Microsoft Server Speech Text to Speech Voice (en-GB, George, Apollo)'
+          gender: MALE
+        - code: en-GH
+          value: en-US
+          descEn: 'Microsoft Server Speech Text to Speech Voice (en-GB, HazelRUS)'
+          gender: FEMALE
+        - code: en-IE
+          value: en-IE
+          descEn: 'Microsoft Server Speech Text to Speech Voice (en-IE, Shaun)'
+          gender: FEMALE
+        - code: en-IE
+          value: en-IE
+          descEn: 'Microsoft Server Speech Text to Speech Voice (en-IE, Shaun)'
+          gender: MALE
+        - code: en-IN
+          value: en-IN
+          descEn: 'Microsoft Server Speech Text to Speech Voice (en-IN, PriyaRUS)'
+          gender: FEMALE
+        - code: en-IN
+          value: en-IN
+          descEn: 'Microsoft Server Speech Text to Speech Voice (en-IN, Ravi, Apollo)'
+          gender: MALE
+        - code: en-US
+          value: en-US
+          descEn: 'Microsoft Server Speech Text to Speech Voice (en-US, ZiraRUS)'
+          gender: FEMALE
+        - code: en-US
+          value: en-US
+          descEn: 'Microsoft Server Speech Text to Speech Voice (en-US, BenjaminRUS)'
+          gender: MALE
+        - code: en-KE
+          value: en-US
+          descEn: 'Microsoft Server Speech Text to Speech Voice (en-GB, HazelRUS)'
+          gender: FEMALE
+        - code: en-NG
+          value: en-US
+          descEn: 'Microsoft Server Speech Text to Speech Voice (en-GB, HazelRUS)'
+          gender: FEMALE
+        - code: en-NZ
+          value: en-US
+          descEn: 'Microsoft Server Speech Text to Speech Voice (en-GB, HazelRUS)'
+          gender: FEMALE
+        - code: en-PH
+          value: en-US
+          descEn: 'Microsoft Server Speech Text to Speech Voice (en-GB, HazelRUS)'
+          gender: FEMALE
+        - code: en-SG
+          value: en-US
+          descEn: 'Microsoft Server Speech Text to Speech Voice (en-GB, HazelRUS)'
+          gender: FEMALE
+        - code: en-TZ
+          value: en-US
+          descEn: 'Microsoft Server Speech Text to Speech Voice (en-GB, HazelRUS)'
+          gender: FEMALE
+        - code: en-ZA
+          value: en-US
+          descEn: 'Microsoft Server Speech Text to Speech Voice (en-GB, HazelRUS)'
+          gender: FEMALE
+        - code: es-ES
+          value: es-ES
+          descEn: 'Microsoft Server Speech Text to Speech Voice (es-ES, HelenaRUS)'
+          gender: FEMALE
+        - code: es-ES
+          value: es-ES
+          descEn: 'Microsoft Server Speech Text to Speech Voice (es-ES, Pablo, Apollo)'
+          gender: MALE
+        - code: es-MX
+          value: es-MX
+          descEn: 'Microsoft Server Speech Text to Speech Voice (es-MX, HildaRUS)'
+          gender: FEMALE
+        - code: es-MX
+          value: es-MX
+          descEn: 'Microsoft Server Speech Text to Speech Voice (es-MX, Raul, Apollo)'
+          gender: MALE
+        - code: es-AR
+          value: es-MX
+          descEn: 'Microsoft Server Speech Text to Speech Voice (es-MX, HildaRUS)'
+          gender: FEMALE
+        - code: es-BO
+          value: es-MX
+          descEn: 'Microsoft Server Speech Text to Speech Voice (es-MX, HildaRUS)'
+          gender: FEMALE
+        - code: es-CL
+          value: es-MX
+          descEn: 'Microsoft Server Speech Text to Speech Voice (es-MX, HildaRUS)'
+          gender: FEMALE
+        - code: es-CO
+          value: es-MX
+          descEn: 'Microsoft Server Speech Text to Speech Voice (es-MX, HildaRUS)'
+          gender: FEMALE
+        - code: es-CR
+          value: es-MX
+          descEn: 'Microsoft Server Speech Text to Speech Voice (es-MX, HildaRUS)'
+          gender: FEMALE
+        - code: es-DO
+          value: es-MX
+          descEn: 'Microsoft Server Speech Text to Speech Voice (es-MX, HildaRUS)'
+          gender: FEMALE
+        - code: es-EC
+          value: es-MX
+          descEn: 'Microsoft Server Speech Text to Speech Voice (es-MX, HildaRUS)'
+          gender: FEMALE
+        - code: es-GT
+          value: es-MX
+          descEn: 'Microsoft Server Speech Text to Speech Voice (es-MX, HildaRUS)'
+          gender: FEMALE
+        - code: es-HN
+          value: es-MX
+          descEn: 'Microsoft Server Speech Text to Speech Voice (es-MX, HildaRUS)'
+          gender: FEMALE
+        - code: es-NI
+          value: es-MX
+          descEn: 'Microsoft Server Speech Text to Speech Voice (es-MX, HildaRUS)'
+          gender: FEMALE
+        - code: es-PA
+          value: es-MX
+          descEn: 'Microsoft Server Speech Text to Speech Voice (es-MX, HildaRUS)'
+          gender: FEMALE
+        - code: es-PE
+          value: es-MX
+          descEn: 'Microsoft Server Speech Text to Speech Voice (es-MX, HildaRUS)'
+          gender: FEMALE
+        - code: es-PR
+          value: es-MX
+          descEn: 'Microsoft Server Speech Text to Speech Voice (es-MX, HildaRUS)'
+          gender: FEMALE
+        - code: es-PY
+          value: es-MX
+          descEn: 'Microsoft Server Speech Text to Speech Voice (es-MX, HildaRUS)'
+          gender: FEMALE
+        - code: es-SV
+          value: es-MX
+          descEn: 'Microsoft Server Speech Text to Speech Voice (es-MX, HildaRUS)'
+          gender: FEMALE
+        - code: es-US
+          value: es-MX
+          descEn: 'Microsoft Server Speech Text to Speech Voice (es-MX, HildaRUS)'
+          gender: FEMALE
+        - code: es-UY
+          value: es-MX
+          descEn: 'Microsoft Server Speech Text to Speech Voice (es-MX, HildaRUS)'
+          gender: FEMALE
+        - code: es-VE
+          value: es-MX
+          descEn: 'Microsoft Server Speech Text to Speech Voice (es-MX, HildaRUS)'
+          gender: FEMALE
+        - code: fi-FI
+          value: fi-FI
+          descEn: 'Microsoft Server Speech Text to Speech Voice (fi-FI, HeidiRUS)'
+          gender: FEMALE
+        - code: fi-FI
+          value: fi-FI
+          descEn: 'Microsoft Server Speech Text to Speech Voice (fi-FI, HeidiRUS)'
+          gender: MALE
+        - code: fr-CA
+          value: fr-CA
+          descEn: 'Microsoft Server Speech Text to Speech Voice (fr-CA, Caroline)'
+          gender: FEMALE
+        - code: fr-CA
+          value: fr-CA
+          descEn: 'Microsoft Server Speech Text to Speech Voice (fr-CA, Caroline)'
+          gender: MALE
+        - code: fr-CH
+          value: fr-CH
+          descEn: 'Microsoft Server Speech Text to Speech Voice (fr-CH, Guillaume)'
+          gender: FEMALE
+        - code: fr-CH
+          value: fr-CH
+          descEn: 'Microsoft Server Speech Text to Speech Voice (fr-CH, Guillaume)'
+          gender: MALE
+        - code: fr-FR
+          value: fr-FR
+          descEn: 'Microsoft Server Speech Text to Speech Voice (fr-FR, HortenseRUS)'
+          gender: FEMALE
+        - code: fr-FR
+          value: fr-FR
+          descEn: 'Microsoft Server Speech Text to Speech Voice (fr-FR, Paul, Apollo)'
+          gender: MALE
+        - code: he-IL
+          value: he-IL
+          descEn: 'Microsoft Server Speech Text to Speech Voice (he-IL, Asaf)'
+          gender: FEMALE
+        - code: he-IL
+          value: he-IL
+          descEn: 'Microsoft Server Speech Text to Speech Voice (he-IL, Asaf)'
+          gender: MALE
+        - code: hi-IN
+          value: hi-IN
+          descEn: >-
+            Microsoft Server Speech Text to Speech Voice (hi-IN, Kalpana,
+            Apollo)
+          gender: FEMALE
+        - code: hi-IN
+          value: hi-IN
+          descEn: 'Microsoft Server Speech Text to Speech Voice (hi-IN, Hemant)'
+          gender: MALE
+        - code: hr-HR
+          value: hr-HR
+          descEn: 'Microsoft Server Speech Text to Speech Voice (hr-HR, Matej)'
+          gender: MALE
+        - code: hu-HU
+          value: hu-HU
+          descEn: 'Microsoft Server Speech Text to Speech Voice (hu-HU, Szabolcs)'
+          gender: FEMALE
+        - code: hu-HU
+          value: hu-HU
+          descEn: 'Microsoft Server Speech Text to Speech Voice (hu-HU, Szabolcs)'
+          gender: MALE
+        - code: id-ID
+          value: id-ID
+          descEn: 'Microsoft Server Speech Text to Speech Voice (id-ID, Andika)'
+          gender: FEMALE
+        - code: id-ID
+          value: id-ID
+          descEn: 'Microsoft Server Speech Text to Speech Voice (id-ID, Andika)'
+          gender: MALE
+        - code: it-IT
+          value: it-IT
+          descEn: 'Microsoft Server Speech Text to Speech Voice (it-IT, Cosimo, Apollo)'
+          gender: FEMALE
+        - code: it-IT
+          value: it-IT
+          descEn: 'Microsoft Server Speech Text to Speech Voice (it-IT, Cosimo, Apollo)'
+          gender: MALE
+        - code: ja-JP
+          value: ja-JP
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ja-JP, Ayumi, Apollo)'
+          gender: FEMALE
+        - code: ja-JP
+          value: ja-JP
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ja-JP, Ichiro, Apollo)'
+          gender: MALE
+        - code: ko-KR
+          value: ko-KR
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ko-KR, HeamiRUS)'
+          gender: FEMALE
+        - code: ko-KR
+          value: ko-KR
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ko-KR, HeamiRUS)'
+          gender: MALE
+        - code: ms-MY
+          value: ms-MY
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ms-MY, Rizwan)'
+          gender: MALE
+        - code: nb-NO
+          value: nb-NO
+          descEn: 'Microsoft Server Speech Text to Speech Voice (nb-NO, HuldaRUS)'
+          gender: FEMALE
+        - code: nb-NO
+          value: nb-NO
+          descEn: 'Microsoft Server Speech Text to Speech Voice (nb-NO, HuldaRUS)'
+          gender: MALE
+        - code: nl-NL
+          value: nl-NL
+          descEn: 'Microsoft Server Speech Text to Speech Voice (nl-NL, HannaRUS)'
+          gender: FEMALE
+        - code: nl-NL
+          value: nl-NL
+          descEn: 'Microsoft Server Speech Text to Speech Voice (nl-NL, HannaRUS)'
+          gender: MALE
+        - code: pl-PL
+          value: pl-PL
+          descEn: 'Microsoft Server Speech Text to Speech Voice (pl-PL, PaulinaRUS)'
+          gender: FEMALE
+        - code: pl-PL
+          value: pl-PL
+          descEn: 'Microsoft Server Speech Text to Speech Voice (pl-PL, PaulinaRUS)'
+          gender: MALE
+        - code: pt-BR
+          value: pt-BR
+          descEn: 'Microsoft Server Speech Text to Speech Voice (pt-BR, HeloisaRUS)'
+          gender: FEMALE
+        - code: pt-BR
+          value: pt-BR
+          descEn: 'Microsoft Server Speech Text to Speech Voice (pt-BR, Daniel, Apollo)'
+          gender: MALE
+        - code: pt-PT
+          value: pt-PT
+          descEn: 'Microsoft Server Speech Text to Speech Voice (pt-PT, HeliaRUS)'
+          gender: FEMALE
+        - code: pt-PT
+          value: pt-PT
+          descEn: 'Microsoft Server Speech Text to Speech Voice (pt-PT, HeliaRUS)'
+          gender: MALE
+        - code: ro-RO
+          value: ro-RO
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ro-RO, Andrei)'
+          gender: FEMALE
+        - code: ro-RO
+          value: ro-RO
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ro-RO, Andrei)'
+          gender: MALE
+        - code: ru-RU
+          value: ru-RU
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ru-RU, Irina, Apollo)'
+          gender: FEMALE
+        - code: ru-RU
+          value: ru-RU
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ru-RU, Pavel, Apollo)'
+          gender: MALE
+        - code: sk-SK
+          value: sk-SK
+          descEn: 'Microsoft Server Speech Text to Speech Voice (sk-SK, Filip)'
+          gender: FEMALE
+        - code: sk-SK
+          value: sk-SK
+          descEn: 'Microsoft Server Speech Text to Speech Voice (sk-SK, Filip)'
+          gender: MALE
+        - code: sl-SI
+          value: sl-SI
+          descEn: 'Microsoft Server Speech Text to Speech Voice (sl-SI, Lado)'
+          gender: MALE
+        - code: sv-SE
+          value: sv-SE
+          descEn: 'Microsoft Server Speech Text to Speech Voice (sv-SE, HedvigRUS)'
+          gender: FEMALE
+        - code: sv-SE
+          value: sv-SE
+          descEn: 'Microsoft Server Speech Text to Speech Voice (sv-SE, HedvigRUS)'
+          gender: MALE
+        - code: th-TH
+          value: th-TH
+          descEn: 'Microsoft Server Speech Text to Speech Voice (th-TH, Pattara)'
+          gender: FEMALE
+        - code: th-TH
+          value: th-TH
+          descEn: 'Microsoft Server Speech Text to Speech Voice (th-TH, Pattara)'
+          gender: MALE
+        - code: tr-TR
+          value: tr-TR
+          descEn: 'Microsoft Server Speech Text to Speech Voice (tr-TR, SedaRUS)'
+          gender: FEMALE
+        - code: tr-TR
+          value: tr-TR
+          descEn: 'Microsoft Server Speech Text to Speech Voice (tr-TR, SedaRUS)'
+          gender: MALE
+        - code: ta-IN
+          value: ta-IN
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ta-IN, Valluvar)'
+          gender: MALE
+        - code: ta-SG
+          value: ta-IN
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ta-IN, Valluvar)'
+          gender: MALE
+        - code: ta-LK
+          value: ta-IN
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ta-IN, Valluvar)'
+          gender: MALE
+        - code: ta-MY
+          value: ta-IN
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ta-IN, Valluvar)'
+          gender: MALE
+        - code: te-IN
+          value: te-IN
+          descEn: 'Microsoft Server Speech Text to Speech Voice (te-IN, Chitra)'
+          gender: MALE
+        - code: vi-VN
+          value: vi-VN
+          descEn: 'Microsoft Server Speech Text to Speech Voice (vi-VN, An)'
+          gender: FEMALE
+        - code: vi-VN
+          value: vi-VN
+          descEn: 'Microsoft Server Speech Text to Speech Voice (vi-VN, An)'
+          gender: MALE
+        - code: zh-CN
+          value: zh-CN
+          descEn: 'Microsoft Server Speech Text to Speech Voice (zh-CN, HuihuiRUS)'
+          gender: FEMALE
+        - code: zh-CN
+          value: zh-CN
+          descEn: >-
+            Microsoft Server Speech Text to Speech Voice (zh-CN, Kangkang,
+            Apollo)
+          gender: MALE
+        - code: zh-HK
+          value: zh-HK
+          descEn: 'Microsoft Server Speech Text to Speech Voice (zh-HK, TracyRUS)'
+          gender: FEMALE
+        - code: zh-HK
+          value: zh-HK
+          descEn: 'Microsoft Server Speech Text to Speech Voice (zh-HK, Danny, Apollo)'
+          gender: MALE
+        - code: zh-TW
+          value: zh-TW
+          descEn: 'Microsoft Server Speech Text to Speech Voice (zh-TW, HanHanRUS)'
+          gender: FEMALE
+        - code: zh-TW
+          value: zh-TW
+          descEn: 'Microsoft Server Speech Text to Speech Voice (zh-TW, Zhiwei, Apollo)'
+          gender: MALE
+        - desc: ?slenska (?sland)
+          code: is-IS
+          value: is-IS
+          descEn: Icelandic (Iceland)
+        - code: ar-SA
+          value: ar-EG
+          descEn: 'Microsoft Server Speech Text to Speech Voice (ar-EG, Hoda)'
+          gender: FEMALE
+        - code: ur-IN
+          value: ur-IN
+          desc: 乌尔都语（印度）
+        - code: ur-PK
+          value: (ur-PK)
+          desc: 乌尔都语（巴基斯坦）
