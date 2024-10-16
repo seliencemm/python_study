@@ -9,6 +9,9 @@ on:
       - main
   workflow_dispatch:
 
+env:
+  HURL_VERSION: 4.3.0
+
 jobs:
   hurl-tests:
     runs-on: ubuntu-latest
