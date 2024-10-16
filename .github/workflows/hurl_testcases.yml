@@ -24,11 +24,12 @@ jobs:
 
     - name: Run Hurl tests
       run: |
-        hurl text_translate_normal.hurl  # 运行所有 Hurl 测试文件
+        mkdir -p ./results  # 创建结果目录
+        hurl --report-html ./results/report.html text_translate_normal.hurl  # 运行 Hurl 并生成 HTML 报告
 
     - name: Upload test results
       if: failure()
       uses: actions/upload-artifact@v3
       with:
         name: hurl-test-results
-        path: ./tests  # 上传失败的测试结果
+        path: ./results  # 上传失败的测试结果
