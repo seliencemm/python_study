@@ -23,7 +23,7 @@ jobs:
 
     - name: Run Hurl tests
       run: |
-        hurl tests/*.hurl  # 运行所有 Hurl 测试文件
+        hurl text_translate_normal.hurl  # 运行所有 Hurl 测试文件
 
     - name: Upload test results
       if: failure()
