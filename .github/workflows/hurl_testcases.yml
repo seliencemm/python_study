@@ -28,7 +28,7 @@ jobs:
     - name: Run Hurl tests
       run: |
         mkdir -p ./results
-        hurl --report-html ./results/report.html text_translate_normal.hurl
+        hurl --test --report-html ./results/report.html text_translate_normal.hurl
 
     - name: Upload test results
       if: failure()
