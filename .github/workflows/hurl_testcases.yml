@@ -1,0 +1,33 @@
+name: Run Hurl Tests
+
+on:
+  push:
+    branches:
+      - main  # 在 push 到 main 分支时运行
+  pull_request:
+    branches:
+      - main  # 在 PR 到 main 分支时运行
+
+jobs:
+  hurl-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3  # 检出代码
+
+    - name: Install Hurl
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y hurl  # 安装 Hurl
+
+    - name: Run Hurl tests
+      run: |
+        hurl tests/*.hurl  # 运行所有 Hurl 测试文件
+
+    - name: Upload test results
+      if: failure()
+      uses: actions/upload-artifact@v3
+      with:
+        name: hurl-test-results
+        path: ./tests  # 上传失败的测试结果
