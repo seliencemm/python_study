@@ -3,11 +3,11 @@ name: Run Hurl Tests
 on:
   push:
     branches:
-      - main  # 在 push 到 main 分支时运行
+      - main
   pull_request:
     branches:
-      - main  # 在 PR 到 main 分支时运行
-  workflow_dispatch: # 允许手动触发
+      - main
+  workflow_dispatch:
 
 jobs:
   hurl-tests:
@@ -15,21 +15,24 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3  # 检出代码
+      uses: actions/checkout@v3
 
     - name: Install Hurl
       run: |
         sudo apt-get update
-        sudo apt-get install -y hurl  # 安装 Hurl
+        sudo apt-get install -y wget
+        echo "deb [trusted=yes] https://apt.fury.io/hurl/ /" | sudo tee /etc/apt/sources.list.d/hurl.list
+        sudo apt-get update
+        sudo apt-get install -y hurl
 
     - name: Run Hurl tests
       run: |
-        mkdir -p ./results  # 创建结果目录
-        hurl --report-html ./results/report.html text_translate_normal.hurl  # 运行 Hurl 并生成 HTML 报告
+        mkdir -p ./results
+        hurl --report-html ./results/report.html text_translate_normal.hurl
 
     - name: Upload test results
       if: failure()
       uses: actions/upload-artifact@v3
       with:
         name: hurl-test-results
-        path: ./results  # 上传失败的测试结果
+        path: ./results
