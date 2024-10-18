@@ -45,9 +45,8 @@ jobs:
         with:
           run: make -B ${{ inputs.project }} env=${{ inputs.env }}
 
-      # 发送失败通知到钉钉
       - name: Notify on Failure
-        if: failure()  # 如果测试失败，触发此步骤
+        if: failure()
         uses: leafney/dingtalk-action@v1
         env:
           DINGTALK_ACCESS_TOKEN: ${{ secrets.DINGTALK_ACCESS_TOKEN }}
@@ -65,9 +64,8 @@ jobs:
           single_title: '查看详情'
           single_url: 'dingtalk://dingtalkclient/page/link?url=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
 
-      # 发送成功通知到钉钉
       - name: Notify on Success
-        if: success()  # 如果测试成功，触发此步骤
+        if: success()
         uses: leafney/dingtalk-action@v1
         env:
           DINGTALK_ACCESS_TOKEN: ${{ secrets.DINGTALK_ACCESS_TOKEN }}
@@ -76,7 +74,7 @@ jobs:
           title: 'TestSuites Success: project=${{ inputs.project }} env=${{ inputs.env }}'
           text: |
             # TestSuites Success by @${{ github.actor }}
-            **项目**: ${{ inputs.project }}
-            **环境**: ${{ inputs.env }}
+            项目: ${{ inputs.project }}
+            环境: ${{ inputs.env }}
           single_title: '查看详情'
           single_url: 'dingtalk://dingtalkclient/page/link?url=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
