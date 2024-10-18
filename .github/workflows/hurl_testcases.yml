@@ -11,7 +11,8 @@ on:
         options:
           - qa
           - uat
-          - production
+          - pro
+          - mock
       project:
         description: 'project'
         required: true
