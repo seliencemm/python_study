@@ -21,7 +21,7 @@ aigc_summarize:
 ###################################################
 # make live_translator env=qa
 live_translator:
-	hurl --very-verbose --continue-on-error --test --report-html live_translator/report/ --variables-file live_translator/env/uat.env --max-time 60 live_translator/translate/text_translate/*.hurl
+	hurl --very-verbose --continue-on-error --test --report-html live_translator/report/ --variables-file live_translator/env/$(env).env --max-time 60 live_translator/translate/text_translate/*.hurl
 
 live_translator_moderation:
 	hurl --very-verbose --test --variables-file live_translator/env/$(env).env --max-time 15 live_translator/moderation.hurl
