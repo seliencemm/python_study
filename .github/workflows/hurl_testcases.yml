@@ -59,7 +59,7 @@ jobs:
             </ul>
             <p><strong>错误日志</strong>:</p>
             <pre>${{ steps.run_test.outputs.stderr }}</pre>
-            <p><a href="https://github.com/${{ github.repository }}/live_translator/report/index.html">查看 Hurl 报告</a></p>
+            <p><a href="https://github.com/${{ github.repository }}/blob/main/live_translator/report/index.html">查看 Hurl 报告</a></p>
           single_title: '查看详情'
           single_url: 'dingtalk://dingtalkclient/page/link?url=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
 
@@ -77,6 +77,6 @@ jobs:
               <li><strong>项目</strong>: ${{ inputs.project }}</li>
               <li><strong>环境</strong>: ${{ inputs.env }}</li>
             </ul>
-            <p><a href="https://github.com/${{ github.repository }}/live_translator/report/index.html">查看 Hurl 报告</a></p>
+            <p><a href="https://github.com/${{ github.repository }}/blob/main/live_translator/report/index.html">查看 Hurl 报告</a></p>
           single_title: '查看详情'
           single_url: 'dingtalk://dingtalkclient/page/link?url=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
