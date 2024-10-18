@@ -38,10 +38,13 @@ jobs:
           sudo apt update && sudo apt install ./hurl_${{ env.HURL_VERSION }}_amd64.deb
 
       - name: Run Hurl tests
+        id: run_test  # 添加步骤 ID
         run: |
           make -B ${{ inputs.project }} env=${{ inputs.env }} > result.log 2> error.log
-          echo "::set-output name=stderr::$(cat error.log)"
-          
+          echo "stderr<<EOF" >> $GITHUB_ENV  # 使用 GITHUB_ENV 设置环境变量
+          cat error.log >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
       - name: Upload Hurl Report
         uses: actions/upload-artifact@v3
         with:
@@ -63,7 +66,7 @@ jobs:
               <li><strong>环境</strong>: ${{ inputs.env }}</li>
             </ul>
             <p><strong>错误日志</strong>:</p>
-            <pre>${{ steps.run_test.outputs.stderr }}</pre>
+            <pre>${{ env.stderr }}</pre>  # 使用环境变量引用 stderr
           single_title: '查看详情'
           single_url: 'dingtalk://dingtalkclient/page/link?url=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
 
