@@ -38,11 +38,11 @@ jobs:
           sudo apt update && sudo apt install ./hurl_${{ env.HURL_VERSION }}_amd64.deb
 
       - name: Run Hurl tests
-        id: run_test  # 添加步骤 ID
         run: |
           make -B ${{ inputs.project }} env=${{ inputs.env }}
 
       - name: Upload Hurl Report
+        if: always()
         uses: actions/upload-artifact@v3
         with:
           name: hurl-report
