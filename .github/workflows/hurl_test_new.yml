@@ -1,0 +1,65 @@
+on:
+  workflow_dispatch:
+    inputs:
+      env:
+        description: 'environment'
+        required: true
+        default: 'qa'
+        type: choice
+        options:
+          - qa
+          - uat
+          - production
+      project:
+        description: 'project'
+        required: true
+        default: 'aigc'
+        type: choice
+        options:
+          - aigc
+          - live_translator
+
+env:
+  HURL_VERSION: 4.3.0
+
+jobs:
+  continuous-integration:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Hurl
+        run: |
+          curl --location --remote-name https://github.com/Orange-OpenSource/hurl/releases/download/${{ env.HURL_VERSION }}/hurl_${{ env.HURL_VERSION }}_amd64.deb
+          sudo apt update && sudo apt install ./hurl_${{ env.HURL_VERSION }}_amd64.deb
+
+      - name: Test
+        uses: mathiasvr/command-output@v2.0.0
+        id: run_test
+        with:
+          run: make ${{ inputs.project }} env=${{ inputs.env }}
+
+      - uses: leafney/dingtalk-action@v1
+        if: ${{ failure() }}
+        env:
+          DINGTALK_ACCESS_TOKEN: ${{ secrets.DINGTALK_ACCESS_TOKEN }}
+        with:
+          msgtype: actionCard
+          title: 'TestSuites Failure: project=${{ inputs.project }} env=${{ inputs.env }}'
+          text: "# TestSuites Failure Log by @${{ github.actor }}\n${{ steps.run_test.outputs.stderr }}"
+          single_title: '查看详情'
+          single_url: 'dingtalk://dingtalkclient/page/link?url=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+
+      - uses: leafney/dingtalk-action@v1
+        if: ${{ success() }}
+        env:
+          DINGTALK_ACCESS_TOKEN: ${{ secrets.DINGTALK_ACCESS_TOKEN }}
+        with:
+          msgtype: actionCard
+          title: 'TestSuites Success:  project=${{ inputs.project }} env=${{ inputs.env }}'
+          text: '# TestSuites Success by @${{ github.actor }}'
+          single_title: '查看详情'
+          single_url: 'dingtalk://dingtalkclient/page/link?url=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
