@@ -29,24 +29,54 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
-    - name: Install Hurl
-      run: |
-        curl --location --remote-name https://github.com/Orange-OpenSource/hurl/releases/download/${{ env.HURL_VERSION }}/hurl_${{ env.HURL_VERSION }}_amd64.deb
-        sudo apt update && sudo apt install ./hurl_${{ env.HURL_VERSION }}_amd64.deb
+      - name: Install Hurl
+        run: |
+          curl --location --remote-name https://github.com/Orange-OpenSource/hurl/releases/download/${{ env.HURL_VERSION }}/hurl_${{ env.HURL_VERSION }}_amd64.deb
+          sudo apt update && sudo apt install ./hurl_${{ env.HURL_VERSION }}_amd64.deb
 
-    - name: Run Hurl tests
-      uses: mathiasvr/command-output@v2.0.0
-      id: run_test
-      with:
-        run: make -B ${{ inputs.project }} env=${{ inputs.env }}
+      - name: Run Hurl tests
+        uses: mathiasvr/command-output@v2.0.0
+        id: run_test
+        with:
+          run: make -B ${{ inputs.project }} env=${{ inputs.env }}
 
-    - name: Upload test results
-      if: failure()
-      uses: actions/upload-artifact@v3
-      with:
-        name: hurl-test-results
-        path: ./results
+      # 发送失败通知到钉钉
+      - name: Notify on Failure
+        if: failure()  # 如果测试失败，触发此步骤
+        uses: leafney/dingtalk-action@v1
+        env:
+          DINGTALK_ACCESS_TOKEN: ${{ secrets.DINGTALK_ACCESS_TOKEN }}
+        with:
+          msgtype: actionCard
+          title: 'TestSuites Failure: project=${{ inputs.project }} env=${{ inputs.env }}'
+          text: |
+            # 测试失败 by @${{ github.actor }}
+            **项目**: ${{ inputs.project }}
+            **环境**: ${{ inputs.env }}
+            **错误日志**: 
+            ```
+            ${{ steps.run_test.outputs.stderr }}
+            ```
+          single_title: '查看详情'
+          single_url: 'dingtalk://dingtalkclient/page/link?url=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+
+      # 发送成功通知到钉钉
+      - name: Notify on Success
+        if: success()  # 如果测试成功，触发此步骤
+        uses: leafney/dingtalk-action@v1
+        env:
+          DINGTALK_ACCESS_TOKEN: ${{ secrets.DINGTALK_ACCESS_TOKEN }}
+        with:
+          msgtype: actionCard
+          title: 'TestSuites Success: project=${{ inputs.project }} env=${{ inputs.env }}'
+          text: |
+            # 测试成功 by @${{ github.actor }}
+            **项目**: ${{ inputs.project }}
+            **环境**: ${{ inputs.env }}
+          single_title: '查看详情'
+          single_url: 'dingtalk://dingtalkclient/page/link?url=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
