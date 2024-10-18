@@ -40,10 +40,14 @@ jobs:
           sudo apt update && sudo apt install ./hurl_${{ env.HURL_VERSION }}_amd64.deb
 
       - name: Run Hurl tests
-        uses: mathiasvr/command-output@v2.0.0
-        id: run_test
+        run: |
+          make -B ${{ inputs.project }} env=${{ inputs.env }} > hurl_report.txt
+
+      - name: Upload Hurl Report
+        uses: actions/upload-artifact@v3
         with:
-          run: make -B ${{ inputs.project }} env=${{ inputs.env }}
+          name: hurl-report
+          path: hurl_report.txt
 
       - name: Notify on Failure
         if: failure()
@@ -54,13 +58,13 @@ jobs:
           msgtype: actionCard
           title: 'TestSuites Failure: project=${{ inputs.project }} env=${{ inputs.env }}'
           text: |
-            # TestSuites Failure by @${{ github.actor }}
-            **项目**: ${{ inputs.project }}
-            **环境**: ${{ inputs.env }}
-            **错误日志**: 
-            ```
-            ${{ steps.run_test.outputs.stderr }}
-            ```
+            <h3>TestSuites Failure by @${{ github.actor }}</h3>
+            <ul>
+              <li><strong>项目</strong>: ${{ inputs.project }}</li>
+              <li><strong>环境</strong>: ${{ inputs.env }}</li>
+            </ul>
+            <p><strong>错误日志</strong>:</p>
+            <pre>${{ steps.run_test.outputs.stderr }}</pre>
           single_title: '查看详情'
           single_url: 'dingtalk://dingtalkclient/page/link?url=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
 
@@ -73,7 +77,7 @@ jobs:
           msgtype: actionCard
           title: 'TestSuites Success: project=${{ inputs.project }} env=${{ inputs.env }}'
           text: |
-            # TestSuites Success by @${{ github.actor }}
+            <h3>TestSuites Success by @${{ github.actor }}</h3>
             <ul>
               <li><strong>项目</strong>: ${{ inputs.project }}</li>
               <li><strong>环境</strong>: ${{ inputs.env }}</li>
