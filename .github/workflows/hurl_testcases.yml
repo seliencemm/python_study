@@ -74,7 +74,9 @@ jobs:
           title: 'TestSuites Success: project=${{ inputs.project }} env=${{ inputs.env }}'
           text: |
             # TestSuites Success by @${{ github.actor }}
-            - **项目**: ${{ inputs.project }}
-            - **环境**: ${{ inputs.env }}
+            <ul>
+              <li><strong>项目</strong>: ${{ inputs.project }}</li>
+              <li><strong>环境</strong>: ${{ inputs.env }}</li>
+            </ul>
           single_title: '查看详情'
           single_url: 'dingtalk://dingtalkclient/page/link?url=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
