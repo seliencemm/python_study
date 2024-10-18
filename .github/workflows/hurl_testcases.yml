@@ -1,13 +1,25 @@
 name: Run Hurl Tests
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
   workflow_dispatch:
+    inputs:
+      env:
+        description: 'environment'
+        required: true
+        default: ''
+        type: choice
+        options:
+          - qa
+          - uat
+          - production
+      project:
+        description: 'project'
+        required: true
+        default: 'live_translator'
+        type: choice
+        options:
+          - aigc
+          - live_translator
 
 env:
   HURL_VERSION: 4.3.0
