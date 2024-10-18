@@ -27,9 +27,10 @@ env:
 jobs:
   hurl-tests:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: read
     steps:
-    - name: Checkout code
+    - name: Checkout Repository
       uses: actions/checkout@v3
 
     - name: Install Hurl
@@ -38,9 +39,10 @@ jobs:
         sudo apt update && sudo apt install ./hurl_${{ env.HURL_VERSION }}_amd64.deb
 
     - name: Run Hurl tests
-      run: |
-        mkdir -p ./results
-        hurl --very-verbose --continue-on-error --test --report-html ./results/ --variables-file uat.env text_translate_normal.hurl
+      uses: mathiasvr/command-output@v2.0.0
+      id: run_test
+      with:
+        run: make ${{ inputs.project }} env=${{ inputs.env }}
 
     - name: Upload test results
       if: failure()
