@@ -53,9 +53,9 @@ jobs:
           DINGTALK_ACCESS_TOKEN: ${{ secrets.DINGTALK_ACCESS_TOKEN }}
         with:
           msgtype: actionCard
-          title: '接口自动化TestSuites Failure: project=${{ inputs.project }} env=${{ inputs.env }}'
+          title: 'TestSuites Failure: project=${{ inputs.project }} env=${{ inputs.env }}'
           text: |
-            # 测试失败 by @${{ github.actor }}
+            # TestSuites Failure by @${{ github.actor }}
             **项目**: ${{ inputs.project }}
             **环境**: ${{ inputs.env }}
             **错误日志**: 
@@ -73,9 +73,9 @@ jobs:
           DINGTALK_ACCESS_TOKEN: ${{ secrets.DINGTALK_ACCESS_TOKEN }}
         with:
           msgtype: actionCard
-          title: '接口自动化TestSuites Success: project=${{ inputs.project }} env=${{ inputs.env }}'
+          title: 'TestSuites Success: project=${{ inputs.project }} env=${{ inputs.env }}'
           text: |
-            # 测试成功 by @${{ github.actor }}
+            # TestSuites Success by @${{ github.actor }}
             **项目**: ${{ inputs.project }}
             **环境**: ${{ inputs.env }}
           single_title: '查看详情'
