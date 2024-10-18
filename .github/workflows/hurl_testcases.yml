@@ -36,16 +36,10 @@ jobs:
         run: |
           curl --location --remote-name https://github.com/Orange-OpenSource/hurl/releases/download/${{ env.HURL_VERSION }}/hurl_${{ env.HURL_VERSION }}_amd64.deb
           sudo apt update && sudo apt install ./hurl_${{ env.HURL_VERSION }}_amd64.deb
-          
-      - name: Create Report Directory
-        run: mkdir -p live_translator/report/
 
       - name: Run Hurl tests
         run: |
           make -B ${{ inputs.project }} env=${{ inputs.env }}
-
-      - name: List Report Directory
-        run: ls -l live_translator/report/
           
       - name: Upload Hurl Report
         uses: actions/upload-artifact@v3
@@ -69,7 +63,6 @@ jobs:
             </ul>
             <p><strong>错误日志</strong>:</p>
             <pre>${{ steps.run_test.outputs.stderr }}</pre>
-            <p><a href="https://github.com/${{ github.repository }}/blob/main/live_translator/report/index.html">查看 Hurl 报告</a></p>
           single_title: '查看详情'
           single_url: 'dingtalk://dingtalkclient/page/link?url=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
 
@@ -87,6 +80,5 @@ jobs:
               <li><strong>项目</strong>: ${{ inputs.project }}</li>
               <li><strong>环境</strong>: ${{ inputs.env }}</li>
             </ul>
-            <p><a href="https://github.com/${{ github.repository }}/blob/main/live_translator/report/index.html">查看 Hurl 报告</a></p>
           single_title: '查看详情'
           single_url: 'dingtalk://dingtalkclient/page/link?url=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
