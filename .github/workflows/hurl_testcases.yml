@@ -62,7 +62,6 @@ jobs:
               <li><strong>项目</strong>: ${{ inputs.project }}</li>
               <li><strong>环境</strong>: ${{ inputs.env }}</li>
             </ul>
-            <p><strong>错误日志</strong>:</p>
           single_title: '查看详情'
           single_url: 'dingtalk://dingtalkclient/page/link?url=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
 
