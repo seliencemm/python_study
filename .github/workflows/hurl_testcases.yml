@@ -39,7 +39,8 @@ jobs:
 
       - name: Run Hurl tests
         run: |
-          make -B ${{ inputs.project }} env=${{ inputs.env }}
+          make -B ${{ inputs.project }} env=${{ inputs.env }} > result.log 2> error.log
+          echo "::set-output name=stderr::$(cat error.log)"
           
       - name: Upload Hurl Report
         uses: actions/upload-artifact@v3
