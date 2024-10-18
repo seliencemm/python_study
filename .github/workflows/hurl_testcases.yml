@@ -64,6 +64,7 @@ jobs:
             <ul>
               <li><strong>项目</strong>: ${{ inputs.project }}</li>
               <li><strong>环境</strong>: ${{ inputs.env }}</li>
+              <li><strong>结论</strong>: 测试不通过！</li>
             </ul>
           single_title: '查看详情'
           single_url: 'dingtalk://dingtalkclient/page/link?url=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
@@ -81,6 +82,7 @@ jobs:
             <ul>
               <li><strong>项目</strong>: ${{ inputs.project }}</li>
               <li><strong>环境</strong>: ${{ inputs.env }}</li>
+              <li><strong>结论</strong>: 测试通过！</li>
             </ul>
           single_title: '查看详情'
           single_url: 'dingtalk://dingtalkclient/page/link?url=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
