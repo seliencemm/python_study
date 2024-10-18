@@ -57,10 +57,10 @@ jobs:
           msgtype: actionCard
           title: 'TestSuites Failure: project=${{ inputs.project }} env=${{ inputs.env }}'
           text: |
-            <h4 style="color:blue;">TestSuites Failure by @${{ github.actor }}</h4>
+            <h4>TestSuites Failure by @${{ github.actor }}</h4>
             <ul>
-              <li><strong>项目</strong>: ${{ inputs.project }}</li>
-              <li><strong>环境</strong>: ${{ inputs.env }}</li>
+              <li><strong>项目</strong>:  ${{ inputs.project }}</li>
+              <li><strong>环境</strong>:  ${{ inputs.env }}</li>
             </ul>
           single_title: '查看详情'
           single_url: 'dingtalk://dingtalkclient/page/link?url=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
@@ -70,14 +70,14 @@ jobs:
         uses: leafney/dingtalk-action@v1
         env:
           DINGTALK_ACCESS_TOKEN: ${{ secrets.DINGTALK_ACCESS_TOKEN }}
-        with
+        with:
           msgtype: actionCard
           title: 'TestSuites Success: project=${{ inputs.project }} env=${{ inputs.env }}'
           text: |
             <h4>TestSuites Success by @${{ github.actor }}</h4>
             <ul>
-              <li><strong>项目</strong>: ${{ inputs.project }}</li>
-              <li><strong>环境</strong>: ${{ inputs.env }}</li>
+              <li><strong>项目</strong>:  ${{ inputs.project }}</li>
+              <li><strong>环境</strong>:  ${{ inputs.env }}</li>
             </ul>
           single_title: '查看详情'
           single_url: 'dingtalk://dingtalkclient/page/link?url=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
