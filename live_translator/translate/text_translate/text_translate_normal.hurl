@@ -26,9 +26,9 @@ X-Platform: livetranslator
     "from": "en-US",
     "to": "zh-CN"
 }
-HTTP 200
+HTTP 400
 [Asserts]
-jsonpath "$.code" == 01
+jsonpath "$.code" == 0
 jsonpath "$.message" == "Success"
 jsonpath "$.data.detect_language" isEmpty
 jsonpath "$.data.translate_text" == "你好，世界"
