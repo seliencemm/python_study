@@ -42,7 +42,7 @@ jobs:
       uses: mathiasvr/command-output@v2.0.0
       id: run_test
       with:
-        run: make ${{ inputs.project }} env=${{ inputs.env }}
+        run: make live_translator_translate env=${{ inputs.env }}
 
     - name: Upload test results
       if: failure()
