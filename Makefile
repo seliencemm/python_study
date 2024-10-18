@@ -30,4 +30,4 @@ live_translator_asa:
 	hurl --very-verbose --test --variables-file live_translator/env/$(env).env --max-time 15 live_translator/asa.hurl
 
 live_translator_translate:
-	hurl --very-verbose --test --variables-file live_translator/env/$(env).env --max-time 60 live_translator/translate/*.hurl
+	hurl --very-verbose --continue-on-error --test --variables-file live_translator/env/uat.env --max-time 60 live_translator/translate/text_translate/*.hurl
