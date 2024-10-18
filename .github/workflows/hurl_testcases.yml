@@ -42,7 +42,7 @@ jobs:
       uses: mathiasvr/command-output@v2.0.0
       id: run_test
       with:
-        run: hurl --very-verbose --test --variables-file live_translator/env/uat.env --max-time 60 live_translator/translate/*.hurl
+        run: hurl --very-verbose --test --variables-file live_translator/env/uat.env --max-time 60 live_translator/translate/text_translate/text_translate_normal.hurl
 
     - name: Upload test results
       if: failure()
