@@ -41,25 +41,3 @@ jobs:
         id: run_test
         with:
           run: make ${{ inputs.project }} env=${{ inputs.env }}
-
-      - uses: leafney/dingtalk-action@v1
-        if: ${{ failure() }}
-        env:
-          DINGTALK_ACCESS_TOKEN: ${{ secrets.DINGTALK_ACCESS_TOKEN }}
-        with:
-          msgtype: actionCard
-          title: 'TestSuites Failure: project=${{ inputs.project }} env=${{ inputs.env }}'
-          text: "# TestSuites Failure Log by @${{ github.actor }}\n${{ steps.run_test.outputs.stderr }}"
-          single_title: '查看详情'
-          single_url: 'dingtalk://dingtalkclient/page/link?url=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
-
-      - uses: leafney/dingtalk-action@v1
-        if: ${{ success() }}
-        env:
-          DINGTALK_ACCESS_TOKEN: ${{ secrets.DINGTALK_ACCESS_TOKEN }}
-        with:
-          msgtype: actionCard
-          title: 'TestSuites Success:  project=${{ inputs.project }} env=${{ inputs.env }}'
-          text: '# TestSuites Success by @${{ github.actor }}'
-          single_title: '查看详情'
-          single_url: 'dingtalk://dingtalkclient/page/link?url=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
