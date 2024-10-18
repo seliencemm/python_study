@@ -41,7 +41,7 @@ jobs:
 
       - name: Run Hurl tests
         run: |
-          make -B ${{ inputs.project }} env=${{ inputs.env }} > hurl_report.txt
+          make -B ${{ inputs.project }} env=${{ inputs.env }}
 
       - name: Notify on Failure
         if: failure()
